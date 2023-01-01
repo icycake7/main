@@ -1,6 +1,7 @@
 ### Final Project
 
 -Selected topic
+
 Our selected topic is housing prices in San Francisco,Austin,and Pittsburgh. 
 
 -Reason why they selected their topic
