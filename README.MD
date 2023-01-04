@@ -19,4 +19,5 @@
 + Questions hope to answer with the data
 
 	One of the questions we hope to answer is how accuratelty we can predict future housing prices with our machine learning model.
+	How do the prices compare with the different amenities, bedroom number, sqft, location etc.? Also does population affect the housing prices?
 	
