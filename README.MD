@@ -21,3 +21,23 @@
 	One of the questions we hope to answer is how accuratelty we can predict future housing prices with our machine learning model.
 	How do the prices compare with the different amenities, bedroom number, sqft, location etc.? Also does population affect the housing prices?
 	
+
+
+
+
+
+
+
+## Machine Learning
+
+I am using a random forest machine learning model to predict house prices from the city datasets that was scraped.
+The datasets were already "cleaned" by the time I got to look and handle the data but there are still some preprocessing steps needed in order for the machine learning model to function correctly. 
+The datasets contained the following features: 
+- price
+- sqft
+- beds
+- laundry
+- pets
+- housing_type
+- parking 
+- hood_district
