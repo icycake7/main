@@ -30,8 +30,9 @@
 
 ## Machine Learning
 
-I am using a random forest machine learning model to predict house prices from the city datasets that was scraped.
+I am using a **random forest machine learning model** to predict house prices from the city datasets that were scraped.
 The datasets were already "cleaned" by the time I got to look and handle the data but there are still some preprocessing steps needed in order for the machine learning model to function correctly. 
+
 The datasets contained the following features: 
 - price
 - sqft
@@ -41,3 +42,15 @@ The datasets contained the following features:
 - housing_type
 - parking 
 - hood_district
+
+I first decided to **drop the hood_district** and **pets** features as it seemed irrelevant and would only confuse the ML model.
+
+After I had to encode the following features as they contained different categorical data. This step is necessary because the ML model needs to work on **numerical data only** for it to function.
+- laundry
+- housing_type
+
+Once those features were encoded I added them to original dataframe and dropped the original laundry and housing_type columns as they would be unnecessary at this point.
+
+Next, the data was split into training and testing sets. I split 80% of the given data into training the model and the remaining 20% will be used for testing the model. With these sets we can also determine the model's accuracy.
+
+The reason for using the random forest model was due to its high accuracy score of 96%. Random forest uses multiple independent decision trees in parallel to learn from data and accumulates their predictions for an outcome.
