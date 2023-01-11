@@ -1,4 +1,4 @@
-#### Predicting and Analyzing Rent Prices across the United States
+##### Predicting and Analyzing Rent Prices across the United States
 
 ### Project Overview
 The rental market has been reshaped by coronavirus over the past few years. With inflation surging, interest rates have sky roketed along with rent. While rental prices all across America are likely to increase over the next coming years, some cities have been impacted more than others. 
