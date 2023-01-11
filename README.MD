@@ -6,10 +6,10 @@ The rental market has been reshaped by coronavirus over the past few years. With
 We would like to help the average american looking where to rent understand what markets are in his or her price range. We chose 9 different cities - 3 large, 3 midsize, 3 smaller across the US varing in population size based of off the ____.These cities vary from X population to Y population. From those cities we scraped data of home listings from craigslist and pulled values such as price, number of bedrooms, sqft, bathrooms, etc. We will be using a Machine Learning Model ___ to __. 
 
 ### Questions We Hope to Answer 
-*How accurately can we predict future housing prices with our machine learning model.
-*How do the prices compare with the different amenities, bedroom number, sqft, location, etc?
-*How does population affect the housing prices?
-*
+* How accurately can we predict future housing prices with our machine learning model.
+* How do the prices compare with the different amenities, bedroom number, sqft, location, etc?
+* How does population affect the housing prices?
+* 
 
 ### Tools
 ## Databases
