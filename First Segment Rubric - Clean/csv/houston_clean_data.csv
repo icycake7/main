@@ -1,0 +1,66 @@
+price,bedroom,sqft,neighborhood,bathroom,number of amenities
+822,1,722.0,"8323 Cinnamon Ln, Houston, TX",1.0,7
+1212,2,1076.0,"7000 Fonvilla St, Houston, TX",1.0,7
+1055,2,860.0,"7511 Beechnut Street, Houston, TX",1.0,8
+795,1,684.0,"6833 Beechnut Street, Houston, TX",1.0,8
+1259,2,1129.0,"7000 Fonvilla St, Houston, TX",1.5,7
+987,1,800.0,"6700 Chimney Rock Rd, Houston, TX",1.0,7
+1059,2,995.0,"1601 Garth Rd, Baytown, TX",1.5,3
+6000,3,3000.0,Rice military,3.5,5
+1077,2,864.0,"5810 Fondren Rd, Houston, TX",1.0,7
+920,1,640.0,"7511 Beechnut Street, Houston, TX",1.0,8
+867,2,864.0,"8323 Cinnamon Ln, Houston, TX",1.0,7
+1280,2,987.0,"4010 Linkwood Dr, Houston, TX",2.0,7
+850,1,640.0,"7511 Beechnut Street, Houston, TX",1.0,8
+1059,1,756.0,"Creekwood Landing Dr, Richwood, TX",1.0,3
+1370,2,900.0,"1714 Wirt Road, Houston, TX",1.5,8
+1012,2,960.0,"8323 Cinnamon Ln, Houston, TX",2.0,7
+1300,2,1200.0,"Spring Branch, Memorial",1.5,8
+860,2,1000.0,"houston, TX",1.0,5
+1399,2,950.0,"14703 Park Row, Houston, TX",2.0,3
+1212,2,1076.0,"7000 Fonvilla St, Houston, TX",1.0,7
+850,1,640.0,"7511 Beechnut Street, Houston, TX",1.0,8
+905,1,684.0,"6833 Beechnut Street, Houston, TX",1.0,8
+1197,2,1000.0,"6700 Chimney Rock Rd, Houston, TX",1.0,7
+867,2,864.0,"8323 Cinnamon Ln, Houston, TX",1.0,7
+999,2,910.0,"1601 Garth Rd, Baytown, TX",1.0,3
+1080,2,860.0,"7511 Beechnut Street, Houston, TX",1.0,8
+1288,2,1075.0,"5810 Fondren Rd, Houston, TX",2.0,7
+2400,4,2847.0,Energy Corridor | Briar Forest,2.5,10
+2500,3,1710.0,Spring Branch | Gessner | BW8,2.0,10
+962,2,960.0,"8323 Cinnamon Ln, Houston, TX",2.0,7
+930,1,714.0,"4010 Linkwood Dr, Houston, TX",1.0,7
+3400,4,3135.0,Spring Branch | Kirkwood | I-10,3.0,10
+1059,1,756.0,"Lake Jackson, Tx",1.0,3
+1165,2,750.0,"1714 Wirt Road, Houston, TX",1.0,8
+822,1,722.0,"8323 Cinnamon Ln, Houston, TX",1.0,7
+965,2,860.0,"9550 Long Point Road, Houston, TX",1.0,8
+900,1,640.0,"7511 Beechnut Street, Houston, TX",1.0,8
+1875,2,1162.0,SUGAR LAND/ STAFFORD,2.0,6
+1017,2,866.0,"7000 Fonvilla St, Houston, TX",1.0,7
+1800,3,1214.0,Missouri City/Stafford,2.0,5
+887,1,687.0,"14405 Rio Bonito, Houston, TX",1.0,8
+1085,2,1053.0,"6833 Beechnut Street, Houston, TX",2.0,8
+1292,2,1100.0,"6700 Chimney Rock Rd, Houston, TX",2.0,7
+1259,2,1129.0,"7000 Fonvilla St, Houston, TX",1.5,7
+1239,2,1112.0,"1601 Garth Rd, Baytown, TX",2.5,3
+1321,2,1158.0,"5810 Fondren Rd, Houston, TX",2.0,7
+2400,5,2844.0,Conroe,3.5,5
+1600,3,2290.0,Houston,2.0,6
+975,1,634.0,"14703 Park Row, Houston, TX",2.0,3
+752,1,722.0,"8323 Cinnamon Ln, Houston, TX",1.0,7
+955,1,735.0,"4010 Linkwood Dr, Houston, TX",1.0,7
+1120,2,860.0,"7511 Beechnut Street, Houston, TX",1.0,8
+1362,3,1203.0,"7900 Bellaire Blvd, Houston, TX",2.0,7
+1000,2,800.0,Houston,2.0,7
+959,1,611.0,"Creekwood Landing Dr, Richwood, TX",1.0,3
+982,2,960.0,"8323 Cinnamon Ln, Houston, TX",2.0,7
+1135,2,750.0,"1714 Wirt Road, Houston, TX",1.0,8
+959,1,611.0,"Lake Jackson, Tx.",1.0,3
+3000,4,3215.0,Houston,2.5,7
+1055,2,860.0,"7511 Beechnut Street, Houston, TX",1.0,8
+1142,2,1076.0,"7000 Fonvilla St, Houston, TX",1.0,7
+999,1,716.0,Houston,1.0,5
+864,1,700.0,Houston,1.0,5
+1100,2,900.0,"9550 Long Point Road, Houston, TX",1.0,8
+1545,3,1392.0,Houston,2.0,5
