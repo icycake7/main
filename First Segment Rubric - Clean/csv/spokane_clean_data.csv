@@ -1,4 +1,4 @@
-price,bedroom,sqft,neighborhood,bathroom,number of amenities
+price,bedroom,sqft,neighborhood,bathroom,amenity_count
 1458,2,875.0,"2808 South Assembly Road, Spokane, WA",1.0,7
 1862,1,1190.0,"2808 South Assembly Road, Spokane, WA",1.0,7
 1862,1,1190.0,"2808 South Assembly Road, Spokane, WA",1.0,3

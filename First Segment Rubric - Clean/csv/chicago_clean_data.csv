@@ -1,4 +1,4 @@
-price,bedroom,sqft,neighborhood,bathroom,number of amenities
+price,bedroom,sqft,neighborhood,bathroom,amenity_count
 675,0,600.0,Brighton Park Chicago,1.0,6
 1800,3,1500.0,Oak Park,1.0,3
 925,1,750.0,Griffith/Calumet Township,1.0,4

@@ -1,4 +1,4 @@
-price,bedroom,sqft,neighborhood,bathroom,number of amenities
+price,bedroom,sqft,neighborhood,bathroom,amenity_count
 1373,1,625.0,Pflugerville,1.0,5
 1226,1,506.0,Arboretum,1.0,5
 2187,1,750.0,South Central,1.0,5

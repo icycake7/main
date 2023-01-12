@@ -1,4 +1,4 @@
-price,bedroom,sqft,neighborhood,bathroom,number of amenities
+price,bedroom,sqft,neighborhood,bathroom,amenity_count
 1425,1,732.0,east valley,1,5
 1610,2,1038.0,east valley,2,3
 1775,2,1134.0,"1930 S 24th St, Phoenix, AZ",2,3

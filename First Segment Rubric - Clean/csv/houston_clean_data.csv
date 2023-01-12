@@ -1,4 +1,4 @@
-price,bedroom,sqft,neighborhood,bathroom,number of amenities
+price,bedroom,sqft,neighborhood,bathroom,amenity_count
 822,1,722.0,"8323 Cinnamon Ln, Houston, TX",1.0,7
 1212,2,1076.0,"7000 Fonvilla St, Houston, TX",1.0,7
 1055,2,860.0,"7511 Beechnut Street, Houston, TX",1.0,8

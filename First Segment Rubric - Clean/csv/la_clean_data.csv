@@ -1,4 +1,4 @@
-price,bedroom,sqft,neighborhood,bathroom,number of amenities
+price,bedroom,sqft,neighborhood,bathroom,amenity_count
 2295,1,650.0,"17171 West Roscoe Boulevard, Los Angeles, CA",1.0,3
 3230,2,1214.0,"5015 Clinton St, Los Angeles, CA",2.0,6
 2950,2,1400.0,LOS ANGELES,1.0,5

@@ -1,4 +1,4 @@
-price,bedroom,sqft,neighborhood,bathroom,number of amenities
+price,bedroom,sqft,neighborhood,bathroom,amenity_count
 3985,2,920.0,cole valley / ashbury hts,1,5
 3961,1,745.0,SOMA / south beach,1,9
 7435,3,1146.0,SOMA / south beach,2,9
