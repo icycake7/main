@@ -3,49 +3,56 @@
 ## Project Overview
 The rental market has been reshaped by coronavirus over the past few years. With inflation surging, interest rates have sky roketed along with rent. While rental prices all across America are likely to increase over the next coming years, some cities have been impacted more than others. 
 
-We would like to help the average american looking where to rent understand what markets are in his or her price range. We chose 9 different cities - 3 large, 3 midsize, 3 smaller across the US varing in population size based of off the ____.These cities vary from X population to Y population. From those cities we scraped data of home listings from craigslist and pulled values such as price, number of bedrooms, sqft, bathrooms, etc. We will be using a Machine Learning Model ___ to __. 
-
-
-## Communication protocols
-### Tools: 
-- #### Slack, Zoom, Google Slides, AWS RDS
-
-### Individual roles:
-
- ### Dabasebase Management / Integration:
-- #### Pascal, Gabi, Adriana
-
- ### Machine Learning:
- - #### Victor and Mark
-
-### Presenatation / Dashboard:
-- #### Pascal, Gabi, Victor, Mark, Adriana 
-
-
+We would like to help the average american looking where to rent understand what markets are in his or her price range. We chose 9 different cities - 3 large, 3 midsize, 3 smaller across the US varing in population size based of off the United States Census Bureau. These cities vary from 300,000 population up to 4 million population. From those cities we scraped data of home listings from craigslist and pulled values such as price, number of bedrooms, sqft, bathrooms, etc. We will be using a Machine Learning Model ___ to __. 
 
 ## Questions We Hope to Answer 
 * How accurately can we predict future housing prices with our machine learning model.
 * How do the prices compare with the different amenities, bedroom number, sqft, location, etc?
 * How does population affect the housing prices?
-* 
+
+## Communication protocols
+### Tools: 
+- Slack, Zoom, Google Slides, AWS RDS
+
+### Individual roles:
+
+ #### Dabasebase Management / Integration:
+- Pascal, Gabi, Adriana
+
+ #### Machine Learning:
+- Victor and Mark
+
+#### Presenatation / Dashboard:
+- Pascal, Gabi, Victor, Mark, Adriana 
+
 
 ## Tools
 ### Databases
-* Scraping Tools
+* Scraping Tools: Python, Jupyter Notebook, Splinter, BeautifulSoup
 * Transforming/ Cleaning Tools
 * Loading Tools
 
 ### Machine Learning
 * Random Forest Model
+* Gradient Boosting Regressor
+* Weighted Voting Regressor
+
 
 ### Tableau
+* Interactive Elements:
+	- Heatmap based on price and city population
+	- Map of U.S. showing summary of stats and ML model accuracy etc.
+
 
 ## Databases
-ERD
+
+![ERD-HousingPrices](ERD-HousingPrices.PNG)
 
 ## Data Collections - ETL
 ### Extraction
-We scraped the data of home listings across nine US cities from craigslist. Using "thedevastator" as model,   San Francisco Dataset Source -https://www.kaggle.com/datasets/thedevastator/scraping-apartments-off-of-craigslist-in-san-fra
+We scraped the data of home listings across small to large size US cities from craigslist. Using "thedevastator" as sample model, we then proceeded to scrape 2022-2023 "apartments / housing for rent" data from Los Angeles, Chicago, Houston, Austin,  Boston, San Francisco, Pittsburgh, Chandler and Spokane.
+
+- San Francisco Dataset Source -https://www.kaggle.com/datasets/thedevastator/scraping-apartments-off-of-craigslist-in-san-fra
 
 ### Transformation
 We cleaned the data using pandas. We Counted the number of amenities in each listing, dropped null rows, ensured there were no duplicates, converted the data types, dropped unimportant information, and exported the cleaned data into csv files. 
