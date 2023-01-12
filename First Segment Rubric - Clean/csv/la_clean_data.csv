@@ -1,0 +1,81 @@
+price,bedroom,sqft,neighborhood,bathroom,number of amenities
+2295,1,650.0,"17171 West Roscoe Boulevard, Los Angeles, CA",1.0,3
+3230,2,1214.0,"5015 Clinton St, Los Angeles, CA",2.0,6
+2950,2,1400.0,LOS ANGELES,1.0,5
+2800,2,840.0,Koreatown,2.0,7
+3085,2,1450.0,Sherman Oaks,2.0,6
+2495,1,600.0,West Los Angeles / Century City,1.0,7
+2983,3,1188.0,central LA 213/323,2.0,3
+3044,2,984.0,"909 W. Temple St. , Los Angeles, CA",2.0,3
+4495,3,1800.0,West Los Angeles / Close to UCLA,2.5,4
+1825,1,700.0,Canoga Park /Warner Center,1.0,6
+3595,1,650.0,Westwood Village / Close to UCLA,1.0,6
+2450,1,815.0,West Los Angeles,1.0,5
+2011,2,1018.0,"43530 Gadsden Avenue , Lancaster, CA",2.0,3
+2100,1,720.0,"2401 S Hacienda Blvd, Hacienda Heights, CA",1.0,6
+2105,1,687.0,central LA 213/323,1.0,3
+1850,1,610.0,Downey,1.0,4
+1990,2,1060.0,Long Beach,1.0,5
+2750,2,950.0,central LA 213/323,1.0,7
+2718,2,943.0,"505 N. Figueroa St., Los Angeles, CA",2.0,3
+1635,2,844.0,"43230 Gadsden Avenue, Lancaster, CA",1.0,3
+2225,1,819.0,Los Angeles,1.0,9
+2950,1,750.0,BEVERLY HILLS,1.0,6
+2395,1,600.0,Silver Lake,1.0,6
+2225,1,840.0,Los Angeles,1.0,9
+1895,1,420.0,Pasadena,1.0,5
+3590,5,2960.0,"37440 Kimberly Lane , Palmdale CA",3.0,5
+3850,2,908.0,Westwood / Near UCLA,2.0,7
+3016,1,710.0,"6300 Green Valley Circle, Culver City, CA",1.0,6
+2575,1,590.0,"300 N Beaudry Ave, Los Angeles, CA",1.0,7
+3740,2,1255.0,"22219 Summit Vue Lane, Woodland Hills, CA",2.0,6
+1900,2,896.0,"44004 Engle Way, Lancaster, CA",1.5,6
+3950,3,1412.0,Van Nuys,2.0,6
+2045,1,575.0,"Redondo Beach, California",1.0,7
+2597,1,774.0,long beach / 562,1.0,3
+1695,1,865.0,Canoga Park,1.0,7
+1995,2,1063.0,"Panorama City, Van Nuys",1.0,7
+3848,3,1309.0,"18005 W. Anne's Circle, Canyon Country, CA",2.0,6
+1935,1,627.0,"10025 De Soto Ave, Chatsworth, CA",1.0,7
+2482,1,743.0,"6300 Variel Ave, Los Angeles, CA",1.0,9
+2400,2,850.0,Glendale,1.0,7
+3016,1,710.0,"6300 Green Valley Circle, Culver City, CA",1.0,6
+4995,4,2400.0,************* VAN NUYS ****************,5.0,5
+4300,4,2300.0,********************** SYLMAR ***********************,3.0,5
+4300,4,2300.0,********************** SYLMAR ***********************,3.0,5
+2850,2,1077.0,****************** PANORAMA CITY *********************,2.0,5
+5995,4,2500.0,************** SUN VALLEY *************,4.5,5
+4204,2,1033.0,antelope valley,2.0,7
+3195,2,1024.0,Hollywood,2.0,6
+4300,4,2300.0,********************** SYLMAR ***********************,3.0,5
+3100,1,727.0,West Los Angeles,1.0,6
+2968,2,946.0,central LA 213/323,2.0,3
+4200,3,1300.0,******** SUN VALLEY ***************,3.0,5
+2895,1,750.0,Westwood / West Los Angeles ADJ,1.0,6
+2895,1,1100.0,"***************Los Angeles, Pico & Crescent Heights*********",1.0,5
+2895,1,1100.0,"***************Los Angeles, Pico & Crescent Heights*********",1.0,5
+4000,3,1700.0,***************LOS ANGELES / EAST HOLLYWOOD***************,2.0,5
+8500,5,2905.0,****************VALLEY VILLAGE************,4.0,5
+4300,4,1400.0,*************** SUN VALLEY **************,2.0,5
+2895,1,1100.0,"***************Los Angeles, Pico & Crescent Heights*********",1.0,5
+4995,4,1900.0,************** NORTH HOLLYWOOD ****************,3.0,5
+2850,2,1077.0,****************** PANORAMA CITY *********************,2.0,5
+4300,4,2300.0,********************** SYLMAR ***********************,3.0,5
+2775,2,1200.0,Downtown Glendale,2.0,6
+1995,1,525.0,"11649 Downey Ave, Los Angeles, CA",1.0,3
+4995,4,2400.0,************* VAN NUYS ****************,5.0,5
+2690,2,900.0,Glendale,1.0,5
+3478,2,1176.0,"22219 Summit Vue Lane, Woodland Hills, CA",2.5,6
+2495,2,1093.0,Northridge /  Nearby CSUN,2.0,5
+2332,1,792.0,san fernando valley,1.0,3
+2800,2,945.0,Northridge,2.0,6
+2350,1,746.0,Los Angeles / North Westlake / Koreatown Adj,1.0,5
+2650,1,600.0,West Los Angeles,1.0,5
+1825,1,849.0,Hollywood,1.0,3
+1595,1,390.0,Canoga Park,1.0,5
+2999,2,900.0,"3250 Fairesta St, La Crescenta, CA",1.5,7
+2295,1,800.0,Miracle Mile / Near LACMA,1.0,4
+2595,1,800.0,Beverly Hills Adj.,1.0,4
+3125,2,1050.0,Encino,2.0,8
+1750,1,675.0,Covina,1.0,5
+2200,3,1400.0,North Hills 91343,2.0,4
