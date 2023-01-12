@@ -9,6 +9,9 @@
 - Drop features that are not strongly correlated with target. Maintain as much non-colinearity as possible.
 - Use model-bound methods such as feature importance in Random Forest and Gradient Boosting Regressors.
 
+## Data Split
+- Default TrainTestSplit settings were applied to create an 80/20 Train/Test set for the preliminary model.
+
 ## Model 1: Random Forest Regressor
 ### Overview
 ## Model 2a: Gradient Boosting Regressor
