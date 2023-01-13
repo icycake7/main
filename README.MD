@@ -30,7 +30,7 @@ We would like to help the average american looking where to rent understand what
 ### Databases
 * Scraping Tools: Python, Jupyter Notebook, Splinter, BeautifulSoup
 * Transforming/ Cleaning Tools
-* Loading Tools
+* Jupyter notebook, pgAdmin, AWS RDS
 
 ### Machine Learning
 * Random Forest Model
