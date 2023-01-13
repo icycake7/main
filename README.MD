@@ -46,7 +46,7 @@ We would like to help the average american looking where to rent understand what
 
 ## Databases
 
-![ERD-HousingPrices](ERD-HousingPrices.PNG)
+[![ERD-HousingPrices](ERD-HousingPrices.PNG)](https://github.com/icycake7/main/blob/main/ERD-HousingPrices.PNG)
 
 ## Data Collections - ETL
 ### Extraction
