@@ -58,7 +58,7 @@ We scraped the data of home listings across small to large size US cities from c
 We cleaned the data using pandas. We Counted the number of amenities in each listing, dropped null rows, ensured there were no duplicates, converted the data types, dropped unimportant information, and exported the cleaned data into csv files. 
 
 ### Loading
-We loaded the data into SQL and combined the various datasets. 
+We hosted the database on AWS RDS and connected it to pgAdmin. Then loaded the clean csv data files into pgAdmin and used SQLAlchemy to create a connection string to the database. 
 
 ## Machine Learning Component
 
