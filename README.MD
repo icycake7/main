@@ -76,6 +76,32 @@ We hosted the database on AWS RDS and connected it to pgAdmin. Then loaded the c
 
 ## Model 1: Random Forest Regressor
 ### Overview
+
+Using a **random forest machine learning model** to predict house prices from the city datasets that were scraped. 
+
+The datasets contained the following features: 
+- price
+- sqft
+- beds
+- laundry
+- pets
+- housing_type
+- parking 
+- hood_district
+
+**drop the hood_district** and **pets** features as it seemed irrelevant and would only confuse the ML model.
+
+After I had to encode the following features as they contained different categorical data. This step is necessary because the ML model needs to work on **numerical data only** for it to function.
+- laundry
+- housing_type
+
+Once those features were encoded I added them to original dataframe and dropped the original laundry and housing_type columns as they would be unnecessary at this point.
+
+Next, the data was split into training and testing sets. I split 80% of the given data into training the model and the remaining 20% will be used for testing the model. With these sets we can also determine the model's accuracy.
+
+The reason for using the random forest model was due to its high accuracy score of 96%. Random forest uses multiple independent decision trees in parallel to learn from data and accumulates their predictions for an outcome.
+
+
 ## Model 2a: Gradient Boosting Regressor
 ### Overview
 ## Model 2b: Weighted Voting Regressor
