@@ -74,6 +74,7 @@ We hosted the database on AWS RDS and connected it to pgAdmin. Then loaded the c
 ### Data Split
 - Default TrainTestSplit settings were applied to create an 80/20 Train/Test set for the preliminary model.
 
+
 ## Model 1: Random Forest Regressor
 ### Overview
 
