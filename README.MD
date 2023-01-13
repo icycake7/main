@@ -30,8 +30,7 @@
 
 ## Machine Learning
 
-I am using a **random forest machine learning model** to predict house prices from the city datasets that were scraped.
-The datasets were already "cleaned" by the time I got to look and handle the data but there are still some preprocessing steps needed in order for the machine learning model to function correctly. 
+Using a **random forest machine learning model** to predict house prices from the city datasets that were scraped. 
 
 The datasets contained the following features: 
 - price
@@ -43,7 +42,7 @@ The datasets contained the following features:
 - parking 
 - hood_district
 
-I first decided to **drop the hood_district** and **pets** features as it seemed irrelevant and would only confuse the ML model.
+**drop the hood_district** and **pets** features as it seemed irrelevant and would only confuse the ML model.
 
 After I had to encode the following features as they contained different categorical data. This step is necessary because the ML model needs to work on **numerical data only** for it to function.
 - laundry
