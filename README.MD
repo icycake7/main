@@ -3,7 +3,7 @@
 ## Project Overview
 The rental market has been reshaped by coronavirus over the past few years. With inflation surging, interest rates have sky roketed along with rent. While rental prices all across America are likely to increase over the next coming years, some cities have been impacted more than others. 
 
-We would like to help the average american looking where to rent understand what markets are in his or her price range. We chose 9 different cities - 3 large, 3 midsize, 3 smaller across the US varing in population size based of off the United States Census Bureau. These cities vary from 300,000 population up to 4 million population. From those cities we scraped data of home listings from craigslist and pulled values such as price, number of bedrooms, sqft, bathrooms, etc. We will be using a Machine Learning Model ___ to __. 
+We would like to help the average american looking where to rent understand what markets are in his or her price range. We chose 9 different cities - 3 large, 3 midsize, 3 smaller across the US varing in population size based of off the United States Census Bureau. These cities vary from 300,000 population up to 4 million population. From those cities we scraped data of home listings from craigslist and pulled values such as price, number of bedrooms, sqft, bathrooms, etc. We will be using a Machine Learning Model Random Forest Regressor to Weighted Voting Regressor. 
 
 ## Questions We Hope to Answer 
 * How accurately can we predict future housing prices with our machine learning model.
