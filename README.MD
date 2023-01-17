@@ -29,8 +29,8 @@ We would like to help the average american looking where to rent understand what
 ## Tools
 ### Databases
 * Scraping Tools: Python, Jupyter Notebook, Splinter, BeautifulSoup
-* Transforming/ Cleaning Tools
-* Jupyter notebook, pgAdmin, AWS RDS
+* Transforming/Cleaning Tools: Pandas, JSON, Numpy, Jupyter Notebook
+* Loading Tools: Jupyter notebook, pgAdmin, AWS RDS
 
 ### Machine Learning
 * Random Forest Model
