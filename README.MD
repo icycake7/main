@@ -1,9 +1,10 @@
+
 # Predicting and Analyzing Rent Prices across the United States
 
 ## Project Overview
 The rental market has been reshaped by coronavirus over the past few years. With inflation surging, interest rates have sky roketed along with rent. While rental prices all across America are likely to increase over the next coming years, some cities have been impacted more than others. 
 
-We would like to help the average american looking where to rent understand what markets are in his or her price range. We chose 9 different cities - 3 large, 3 midsize, 3 smaller across the US varing in population size based of off the United States Census Bureau. These cities vary from 300,000 population up to 4 million population. From those cities we scraped data of home listings from craigslist and pulled values such as price, number of bedrooms, sqft, bathrooms, etc. We will be using a Machine Learning Model ___ to __. 
+We would like to help the average american looking where to rent understand what markets are in his or her price range. We chose 9 different cities - 3 large, 3 midsize, 3 smaller across the US varing in population size based of off the United States Census Bureau. These cities vary from 300,000 population up to 4 million population. From those cities we scraped data of home listings from craigslist and pulled values such as price, number of bedrooms, sqft, bathrooms, etc. We will be using a Machine Learning Model Random Forest Regressor to Weighted Voting Regressor. 
 
 ## Questions We Hope to Answer 
 * How accurately can we predict future housing prices with our machine learning model.
@@ -29,8 +30,8 @@ We would like to help the average american looking where to rent understand what
 ## Tools
 ### Databases
 * Scraping Tools: Python, Jupyter Notebook, Splinter, BeautifulSoup
-* Transforming/ Cleaning Tools
-* Jupyter notebook, pgAdmin, AWS RDS
+* Transforming/Cleaning Tools: Pandas, JSON, Numpy, Jupyter Notebook
+* Loading Tools: Jupyter notebook, pgAdmin, AWS RDS
 
 ### Machine Learning
 * Random Forest Model
@@ -46,7 +47,7 @@ We would like to help the average american looking where to rent understand what
 
 ## Databases
 
-[![ERD-HousingPrices](ERD-HousingPrices.PNG)](https://github.com/icycake7/main/blob/main/ERD-HousingPrices.PNG)
+![ERD-HousingPrices](ERD-HousingPrices.PNG)
 
 ## Data Collections - ETL
 ### Extraction
@@ -73,7 +74,6 @@ We hosted the database on AWS RDS and connected it to pgAdmin. Then loaded the c
 
 ### Data Split
 - Default TrainTestSplit settings were applied to create an 80/20 Train/Test set for the preliminary model.
-
 
 ## Model 1: Random Forest Regressor
 ### Overview
@@ -103,10 +103,6 @@ Next, the data was split into training and testing sets. I split 80% of the give
 The reason for using the random forest model was due to its high accuracy score of 96%. Random forest uses multiple independent decision trees in parallel to learn from data and accumulates their predictions for an outcome.
 
 
-
-
-
-
 ## Model 2a: Gradient Boosting Regressor
 ### Overview
 ## Model 2b: Weighted Voting Regressor
@@ -134,8 +130,4 @@ The weights were calculated based on the following formulation of this quadradic
 
 ## Findings
 
-
-
-
-
-
+	
