@@ -1,6 +1,334 @@
 price,bedroom,sqft,neighborhood,bathroom,amenity_count
+2400,2,1050.0,"Stoneham, MA",2,7
+1550,0,400.0,Lexington,1,6
+3000,3,1188.0,metro west,2,6
+1675,1,675.0,"North Weymouth, MA",1,4
+5000,3,2200.0,CAMBRIDGE/HURON VILLAGE,3,7
+3799,1,730.0,South End - Boston -By Downtown,1,7
+3799,1,755.0,Back Bay - Boston - Near Newbury St,1,9
+1945,1,721.0,Franklin,1,5
+1861,1,730.0,Norwood,1,5
+2964,1,915.0,Braintree,1,5
+3175,2,1351.0,Foxborough,2,5
+2566,2,1063.0,Tewksbury,1,5
+3760,2,1598.0,Braintree,2,5
+3099,2,1380.0,Woburn,2,5
+4999,2,1017.0,Boston,1,5
+2896,1,830.0,Waltham,1,5
+2731,1,965.0,Needham,1,5
+3452,1,568.0,345 Harrison Ave.,1,7
+2898,2,1113.0,"Peabody, MA",2,3
+4977,2,1222.0,Boston,2,5
+2114,1,719.0,Concord,1,5
+2561,1,747.0,Malden,1,5
+2623,1,640.0,Boston Waterfront by Walk to Subway,1,8
+2445,0,475.0,Cambridge Walk to Subway - Near Kendall - NO FEE,1,8
+4125,1,690.0,Bay Village - Back Bay East - Boston - NO FEE,1,9
+3900,3,995.0,Somerville,1,4
+1998,2,1500.0,Back Central,1.5,6
+2800,2,1000.0,Cambridge \ Porter Square,1,4
+3200,1,900.0,Cambridge \ Central Sq. \ Mid Cambridge,1,6
+3007,2,950.0,Boston Waterfront by Walk to Subway,2,8
+3100,1,850.0,Cambridge \ Central Sq. \ Harvard Sq.,1,5
+2200,0,496.0,Cambridge,1,7
+2200,1,855.0,Quincy,1,6
+3200,2,1300.0,Medford \ Tufts,1,5
+3400,3,1200.0,Dorchester,1,3
+3000,2,1100.0,Somerville \ Davis Sq. \ Porter Sq.,1,4
+3500,2,850.0,Boston \ Back Bay,1,6
+2395,2,920.0,Quincy,2,5
+2095,2,800.0,Quincy,1,4
 2300,2,900.0,Quincy,1,5
-1275,1,325.0,metro west,1,3
+2195,2,900.0,Quincy,1,5
+2500,2,1000.0,Somerville \ Magoun Sq. \ Winter Hill,1,6
+2200,2,900.0,Sharon MA near center,1.5,3
+2200,3,1250.0,"Waldor Drive, Mansfield",1.5,4
+4250,2,1806.0,Salem,2.5,6
+2550,2,1200.0,Cambridge \ N. Cambridge \ Alewife,1,5
+2500,1,550.0,Cambridge \ Davis Sq. \ N. Cambridge,1,7
+3200,2,1276.0,East Boston,2,5
+3100,3,1206.0,BOSTON,1,5
+1600,1,500.0,Haverhill,1,6
+2800,3,1300.0,"Lawrence, MA",1,3
+2550,2,1251.0,Billerica,2,8
+2625,2,1331.0,Billerica,2,8
+2700,2,1008.0,"Gloucester, MA",2,7
+2000,1,450.0,boston/cambridge/brookline,1,3
+3450,3,1500.0,Newton,1,3
+3099,3,1100.0,Dorchester Ma,1,5
+4131,2,1000.0,Cambridge Walk to Subway & Kendall Sq. - NO BROKER FEE,2,8
+1850,1,550.0,Abington,1,7
+2325,2,600.0,"Malden, MA",1,6
+2275,2,700.0,Woburn,1,5
+1473,0,400.0,Watertown,1,6
+2200,2,950.0,North Quincy,1,6
+2400,2,950.0,Allston,1,7
+2100,1,825.0,Southborough,1,6
+2000,1,600.0,Chelmsford,1,4
+4250,2,1248.0,South Boston,2,6
+5950,2,1320.0,Back Bay,2.5,8
+2600,3,1100.0,Roslindale,1,5
+2400,2,1800.0,"Beverly, MA",1,4
+2900,1,460.0,Theatre District,1,8
+5000,4,1200.0,South Boston,2,5
+3300,2,853.0,SOMERVILLE,1,6
+2045,2,980.0,Bellingham,2,6
+2300,2,1000.0,Medford,1,4
+795,1,1200.0,"Allston, Brighton, BU, BC",2,3
+1095,1,1500.0,"Porter, Harvard, Davis",2,3
+2442,0,430.0,Cambridge Walk to Subway - Near Kendall - NO FEE,1,8
+4500,3,850.0,Fenway,1,6
+3050,2,630.0,Fenway,1,5
+3400,2,700.0,Fenway,1,6
+6300,2,1250.0,Back Bay,2,6
+3350,1,700.0,Beacon Hill,1.5,5
+2300,0,400.0,Fenway,1,5
+2200,0,400.0,Boston,1,5
+2800,2,630.0,Fenway,1,5
+2800,2,630.0,Fenway,1,5
+1845,0,230.0,Back Bay,1,3
+2050,0,330.0,Beacon Hill,1,5
+2650,1,600.0,Washington Square,1,5
+1895,0,230.0,Back Bay,1,5
+4000,3,750.0,Fenway,1,3
+3650,2,750.0,Boston,1,6
+3775,3,750.0,Fenway,1,4
+2900,1,650.0,Back Bay,1,7
+4300,2,1400.0,South End,2,7
+5000,3,2200.0,CAMBRIDGE/HURON VILLAGE,3,7
+4500,3,1578.0,South End,2,7
+5000,3,2200.0,CAMBRIDGE/HURON VILLAGE,3,8
+2350,2,745.0,Billerica,1,3
+1585,1,650.0,Newburyport,1,5
+2595,2,850.0,Newton - ville near Charles River,2,6
+3600,3,1200.0,Cambridge - off Mass. Ave west of Porter Square,1,5
+3200,3,1656.0,Malden,1,7
+2900,3,1430.0,East Boston,1,5
+3700,3,1800.0,QUINCY,3,6
+2000,1,700.0,Cambridge,1,6
+3100,2,865.0,CAMBRIDGE,1,4
+2275,2,700.0,Woburn,1,5
+2325,2,600.0,"Malden, MA",1,6
+2000,2,1100.0,Haverhill,1,6
+2195,2,900.0,canton,1,6
+2550,2,950.0,Cambridge \ N. Cambridge \ Alewife,1,5
+3200,3,1800.0,QUINCY,2.5,4
+3500,2,1176.0,SOMERVILLE,2,6
+1300,3,250.0,Brookline,1,3
+2500,2,1171.0,QUINCY,2,4
+2500,2,1125.0,Sudbury ma,2,5
+2400,2,1000.0,Medford,1,6
+3400,3,1600.0,Dorchester,1,4
+2349,2,1040.0,Bellingham,2,6
+3000,2,1348.0,Reading,1,8
+3000,2,1348.0,"Reading, Ma.",1,6
+2495,2,750.0,Newton - Lower Falls on Wellesey Line,1,6
+4950,4,2144.0,Newton,2.5,6
+2800,2,1100.0,ANDOVER,2,2
+2700,2,1138.0,ANDOVER,2,2
+5000,3,2200.0,CAMBRIDGE/HURON VILLAGE,3,8
+2734,1,605.0,Cambridge Walk to Subway - NO BROKER FEE,1,8
+7780,3,1482.0,Cambridge Walk to Subway -NO BROKER FEE,2,9
+2000,2,700.0,"Everett,MA",1,5
+3000,3,1000.0,Framingham,1,3
+2500,1,550.0,Cambridge \ Davis Sq. \ N. Cambridge,1,7
+1375,1,675.0,"ROCKPORT, DOWNTOWN",1,5
+4195,3,1200.0,Central Square,1,4
+3600,3,1200.0,Somerville,2,8
+1900,1,700.0,Brighton Oak Square,1,0
+2000,1,700.0,Bedford center location,1,3
+2200,2,900.0,Brighton Oak Square,1,0
+2200,2,1100.0,Somerville \ Tufts \ Teele Sq.,1,5
+2000,0,475.0,Cambridge \ Harvard Sq. \ Brattle,1,4
+1800,1,700.0,ARLINGTON,1,6
+3400,2,1642.0,north shore,2.5,6
+2400,1,740.0,north shore,1,6
+4200,2,1100.0,Somerville \ Magoun Sq. \ Winter Hill,2,7
+2025,1,550.0,Allston,1,4
+1725,0,487.0,"Cleveland Circle, Brighton (C + D Lines)",1,5
+2100,0,410.0,Charlestown,1,7
+3800,3,1400.0,Dorchester,2,0
+2100,2,1800.0,Groton,1.5,4
+2800,1,1000.0,Dorchester,1,0
+2605,1,740.0,West Roxbury,1,7
+7800,8,2542.0,Allston,3.5,5
+2515,1,624.0,Jamaica Plain - Boston - Walk to Subway - NO FEE,1,8
+5600,4,1400.0,Brighton,2,7
+1570,2,9999.0,Methuen,1,9
+2400,2,1000.0,7 Concord Ave. #1 Belomnt MA,1,3
+4400,4,1500.0,Belmont MA,2,5
+2395,2,775.0,Newton - Aburndale area,1,6
+2200,2,850.0,Canton overlooks Neponset River + easy access to Rt. 95,1,5
+1575,1,700.0,Lowell,1,4
+2300,1,700.0,Revere,1,6
+1600,1,778.0,Natick,1,4
+2400,2,1100.0,northwest/merrimack,1.5,6
+2358,0,430.0,Cambridge Walk to Subway - Near Kendall - No Fee,1,9
+2105,0,505.0,Jamaica Plain - Boston - Walk to Subway - NO FEE,1,8
+4500,2,1100.0,South End of Boston Walk to Newbury St & Downtown - No Fee,1,5
+2150,1,600.0,Lincoln,1,5
+2600,2,1300.0,Melrose,1,4
+2095,1,730.0,Franklin,1,5
+2439,2,1000.0,Franklin,2,5
+1839,1,580.0,Norwood,1,5
+2066,2,850.0,Norwood,1,5
+2902,2,1276.0,Braintree,2,5
+3116,2,1216.0,Foxborough,2,5
+2583,1,936.0,Tewksbury,1,5
+2985,1,1235.0,Braintree,1,5
+2256,1,962.0,Woburn,1,5
+5295,2,1037.0,Boston,1.5,5
+4495,1,915.0,Boston,1,5
+2439,1,774.0,Waltham,1,5
+2797,1,1122.0,Needham,1,5
+3403,1,568.0,345 Harrison Ave.,1,7
+2833,2,1081.0,"Peabody, MA",2,3
+3788,1,765.0,Boston,1,5
+2350,2,975.0,Concord,2,5
+2114,1,719.0,Concord,1,5
+2893,2,1045.0,Malden,2,5
+2506,1,690.0,Malden,1,5
+4300,2,596.0,Midtown,1,8
+2800,2,1003.0,Somerville,1,5
+2500,0,364.0,Midtown,1,8
+3195,2,1000.0,East Boston,1.5,5
+3195,2,1000.0,East Boston,1.5,5
+2950,1,603.0,Midtown,1,8
+2800,3,1280.0,Belmont,1,3
+2200,2,800.0,Garden St Newburyport,1,3
+2995,1,1000.0,Back Bay,1,6
+2600,1,629.0,South Boston,1,7
+2700,3,1100.0,Main Street Woburn,1,3
+2400,2,1100.0,Dorchester,1,5
+2250,1,490.0,Brighton,1,7
+4650,1,646.0,Boston,1,5
+2200,0,430.0,Brighton,1,7
+2250,1,580.0,Winter Hill,1,6
+3100,2,700.0,Cambridge \ Central Sq. \ Harvard Sq.,1,5
+2200,1,773.0,Cambridge,1,6
+3000,2,1200.0,East Boston,2,5
+2800,2,650.0,East Boston,1,6
+2650,0,425.0,Fenway - Boston - Longwood Medical Area - No Fee,1,8
+1966,1,560.0,CHELMSFORD,1,5
+3600,3,1200.0,Somerville \ Davis Sq. \ Ball Sq.,2,4
+1775,1,675.0,"ROCKPORT, DOWNTOWN",1,5
+3900,2,1300.0,Cambridge \ Mid Cambridge \ Inman Sq.,1.5,4
+1800,1,950.0,Pembroke,1,6
+2736,0,423.0,Cambridge Walk to Subway -Shuttle to MIT,1,9
+2300,2,1100.0,Dot/Rox,1,5
+6510,2,1265.0,South End of Boston Walk to Newbury St & Downtown - No Fee,2,8
+3850,1,730.0,South End of Boston Walk to Newbury St & Downtown - No Fee,1,8
+1700,1,800.0,Bedford,1,4
+2995,1,535.0,Cambridge,1,6
+2000,1,700.0,Wilmington,1,4
+1604,0,300.0,CHELMSFORD,1,6
+1700,1,670.0,Quincy,1,6
+2950,4,1040.0,Salem,1,4
+2550,1,600.0,"North End Boston, MA",1,6
+3300,2,800.0,"North End, Boston",2,6
+3300,2,800.0,"North End, Boston",1,5
+4000,2,1200.0,"North End Boston, MA",2,6
+3000,2,1700.0,Rockport,2,7
+1800,1,600.0,"Beverly, MA",1,5
+1750,1,650.0,Lexington,1,7
+3200,2,1100.0,Watertown,1.5,8
+2050,1,650.0,North Quincy,1,8
+1950,2,900.0,Wakefield,1,6
+3700,2,800.0,"North End, Boston",1,6
+1900,0,249.0,"North End, Boston",1,6
+2750,3,1200.0,Waltham,1,5
+1874,1,700.0,Revere,1,3
+1404,1,564.0,Mansfield,1,3
+1700,1,575.0,Framingham,1,5
+1819,2,875.0,Mansfield,1,3
+1675,1,705.0,Taunton,1,3
+1695,1,675.0,Rockport,1,3
+2500,2,1200.0,"Belmont loc tight to Cambridge line, walk to Alewife",1,6
+7000,4,1780.0,Boston,3,6
+3095,1,535.0,Cambridge,1,6
+4895,3,1060.0,Boston,1.5,7
+2250,1,490.0,Brighton,1,7
+1995,0,405.0,Somerville,1,6
+2200,1,855.0,Quincy,1,6
+3500,4,1350.0,Foxboro,2,7
+3350,2,964.0,Brookline,1,7
+3800,3,2400.0,Admiral’s Hill,2.5,5
+2535,1,768.0,West Roxbury,1,7
+3000,1,430.0,Theatre District,1,8
+3000,1,430.0,Theatre District,1,8
+3000,1,659.0,Midtown,1,8
+2800,2,1600.0,Stoughton,2.5,5
+1900,2,900.0,"Wakefield, MA",1,4
+5900,5,1700.0,Brighton,2,7
+3000,2,1000.0,Mattapan,1,3
+2095,1,668.0,Brighton,1,8
+4275,2,1000.0,Brighton,1.5,8
+4200,2,950.0,Brighton,1,8
+4250,2,1000.0,Brighton,1.5,8
+7350,5,1800.0,Brighton,2,8
+3200,2,924.0,CAMBRIDGE,2,4
+625,1,100.0,Downtown Natick Ma,shared,4
+5340,2,940.0,Boston,1,5
+4500,3,1660.0,Cambridge,2.5,4
+725,1,170.0,Downtown Natick Ma,shared,4
+4000,4,2085.0,Malden,3,7
+1850,1,700.0,Quincy **NO Broker Fee**,1,4
+2400,2,1000.0,Brighton,1,7
+3350,2,964.0,Brookline,1,6
+2800,1,650.0,North End,1,6
+1725,0,487.0,"Cleveland Circle, Brighton (Near Beacon St)",1,5
+2000,3,1200.0,Central Beverly,1,6
+3200,3,1300.0,"Salem, MA",1,4
+1979,2,675.0,CHELMSFORD,1,5
+1597,1,300.0,CHELMSFORD,1,5
+2525,2,700.0,Washington Square,1,8
+2350,1,750.0,Charlestown,1,5
+2100,1,600.0,Brookline:Washington Square,1,8
+2500,2,800.0,Dorchester,1,3
+2395,1,756.0,south shore,1,7
+2266,2,1114.0,Westwood,2,7
+2100,1,582.0,Arlington,1,8
+2500,3,1100.0,Woburn,1,8
+2850,3,1050.0,"Dorchester, MA",1,4
+3440,2,675.0,Cambridge,1,3
+1959,1,847.0,Bellingham,1,6
+2800,1,650.0,Cambridge  Central Square,1,5
+3200,2,1029.0,Jamaica Plain,1,7
+2300,2,1085.0,North Quincy,1,4
+2400,1,624.0,Jamaica Plain,1,5
+2450,2,1200.0,Dorchester,1,5
+1795,2,775.0,Rockport,1,3
+1725,2,785.0,Taunton,1,3
+1450,2,750.0,Medway,1,5
+3000,3,1100.0,Roxbury,1,2
+1995,0,405.0,Somerville,1,6
+2250,1,490.0,Brighton,1,7
+3400,5,1850.0,Lynn western Ave. Rt. 107,2,3
+1826,2,792.0,Hyde Park,1,5
+2950,2,1000.0,"SOMERVILLE, near Davis/Porter or Magoun Square T",1,9
+3100,2,1100.0,Stoneham,1.5,6
+2312,2,1031.0,Franklin,2,5
+2255,2,925.0,Norwood,1.5,5
+3289,2,1208.0,Braintree,2,5
+2625,1,1046.0,Foxborough,1,5
+2454,1,842.0,Tewksbury,1,5
+2851,1,1231.0,Braintree,1,5
+2656,1,1076.0,Woburn,1,5
+3650,3,1950.0,CANTON MA,2.5,8
+2950,2,1062.0,Quincy,2,6
+1750,3,900.0,Lawrence MA,1,4
+2200,1,1000.0,"Chelsea, MA",1,10
+2300,3,800.0,MELROSE,1,5
+2695,2,850.0,East Boston,1,4
+3160,2,1060.0,Boston Walk to Redline SOUTH BOSTON AREA,2,11
+3610,1,755.0,Boston,1,5
+2995,1,914.0,Waltham,1,5
+4094,2,1339.0,Needham,2,5
+2999,0,465.0,345 Harrison Ave.,1,7
+2604,1,899.0,"Peabody, MA",1,3
+4284,1,829.0,Boston,1,5
+2350,2,975.0,Concord,2,5
+2511,1,747.0,Malden,1,5
 2400,2,1100.0,Watertown,1,4
 4895,3,1060.0,Boston,1.5,7
 7000,4,1780.0,Boston,3,6
@@ -10,28 +338,32 @@ price,bedroom,sqft,neighborhood,bathroom,amenity_count
 2250,1,490.0,Brighton,1,7
 3900,2,1100.0,Cambridge,1,5
 2450,2,1200.0,Dorchester,1,5
+1995,0,405.0,Somerville,1,6
+2200,0,430.0,Boston,1,6
+2300,0,640.0,Boston Walk to Redline by South Boston,1,9
 3200,3,1000.0,Somerville,1,3
 2967,2,1000.0,North of Boston Walk to Subway,2,8
 1150,1,450.0,"NORWOOD, MA",1,4
-2152,1,681.0,North of Boston Walk to Subway,1,7
+2090,1,681.0,North of Boston Walk to Subway,1,7
 1824,1,700.0,Revere,1,3
-2600,4,1100.0,Brockton,1,4
+2600,4,1506.0,Brockton,1,4
 2225,1,652.0,Lynn,1,5
 2050,1,1050.0,Cambridge,1,8
 2399,1,750.0,Quincy Center,1,6
 2188,3,1450.0,Rockport,1.5,6
 3731,2,1050.0,Downtown Boston - Walk to South Station - NO BROKER FEE,2,8
 1893,2,1070.0,Rockport,1,6
+1473,0,358.0,"Rockport, MA",1,6
 2700,2,1000.0,Newton Corner,1,6
 2395,2,775.0,Newton - Aburndale area,1,6
 2200,1,855.0,Quincy,1,6
 3600,3,1600.0,"Porter Square, Somerville",2,4
 2900,3,1600.0,"French Hill, Marlborough",2,6
 2650,1,600.0,NORTH END ~ March 1st,1,3
+2400,0,450.0,NORTH END ~ March 1st,1,3
+2300,0,400.0,"Lowell, Massachusetts",1,7
 2600,2,1200.0,South Boston,1.5,4
 2784,1,650.0,East Boston,1,8
-2095,2,800.0,Quincy,1,4
-2395,2,920.0,Quincy,2,5
 2350,1,600.0,North End,1,5
 2600,2,850.0,Sacramento St./ Nr Harvard Sq.,1,7
 4849,2,1194.0,Cambridge Walk to Subway -Shuttle to MIT,2,8
@@ -41,11 +373,46 @@ price,bedroom,sqft,neighborhood,bathroom,amenity_count
 2500,2,1014.0,Quincy,1,6
 3097,3,1666.0,Franklin,2,4
 2550,1,720.0,Cambridge,1,6
+3475,0,508.0,Back Bay of Boston - Walk to Boston Commons / Public Garden,1,9
 5000,3,2200.0,CAMBRIDGE/HURON VILLAGE,3,8
 4498,2,1010.0,Charlestown,2,10
 3971,2,860.0,Charlestown,2,10
 3199,1,585.0,Charlestown,1,10
 3174,1,756.0,Charlestown,1,10
+2712,0,496.0,Charlestown,1,10
+2702,0,526.0,Charlestown,1,10
 2600,2,860.0,Somerville,1,4
 3700,2,825.0,Harvard Square,1,7
-1900,2,900.0,Groton Massachusetts,1,0
+1750,2,900.0,Groton Massachusetts,1,0
+2999,3,1200.0,Medford,1,4
+1000,5,4500.0,"Hyde Park, Boston",2,3
+1150,2,625.0,Clinton (Metrowest),1,3
+2900,2,1000.0,Medford,1,6
+2734,2,1000.0,Medford,1,3
+3300,2,980.0,Boston Walk to Redline,2,10
+1600,1,650.0,"Melrose, Ma.",1,4
+2280,1,825.0,Central Watertown,1,3
+5800,5,2200.0,Lynnfield,2,6
+2350,2,950.0,Melrose,1,3
+3200,1,725.0,Boston,1,4
+2700,3,1100.0,Main Street Woburn,1,3
+2525,2,1000.0,West Medford,1,6
+3200,3,1300.0,Braintree - Beautiful 3 bedroom,1,5
+2050,1,785.0,South End,1,8
+2185,1,947.0,Downtown Boston,2,7
+6000,4,3200.0,South End,2.5,5
+1250,0,400.0,mansfield,1,4
+2275,1,690.0,Cambridge,1,5
+5000,3,2200.0,CAMBRIDGE/HURON VILLAGE,3,8
+2790,3,900.0,Wellesley,1,8
+5500,5,2000.0,Allston,2,4
+2900,2,1200.0,East Boston,1,5
+2699,1,678.0,Waltham,1,8
+2250,2,1050.0,Brighton,1,3
+2850,3,1100.0,Brighton Center Oak Square Area,1.5,6
+3900,2,750.0,Beacon Hill,1,5
+2400,2,950.0,Allston,1,7
+2000,1,700.0,Cambridge,1,6
+1944,1,809.0,Bellingham,1,6
+3200,2,1276.0,East Boston,2,5
+1500,1,270.0,Rockport,1,3
