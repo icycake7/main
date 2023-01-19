@@ -1,0 +1,85 @@
+price,bedroom,sqft,neighborhood,bathroom,number of amenities
+1650,3,1426,"2048 Pioneer Avenue, Pittsburgh, PA",1.0,6
+1315,1,825,"916 Beaver Grade Road, Coraopolis, PA",1.0,7
+795,1,700,Moon Township,1.0,4
+2785,2,926,"625 Stanwix Street, Pittsburgh, PA",1.0,6
+1695,2,1035,"7 Dorchester Dr., Pittsburgh, PA",1.5,8
+1265,1,750,"916 Beaver Grade Road, Coraopolis, PA",1.0,7
+1180,1,640,"7 Dorchester Dr., Pittsburgh, PA",1.0,8
+1395,2,860,"7 Dorchester Dr., Pittsburgh, PA",1.0,8
+1595,3,725,"106 South 14th Street - 3, PA",1.0,6
+1275,1,640,"916 Beaver Grade Road, Coraopolis, PA",1.0,5
+2785,2,926,"625 Stanwix Street, Pittsburgh, PA",1.0,6
+1395,2,860,"7 Dorchester Dr., Pittsburgh, PA",1.0,8
+1495,2,1050,"916 Beaver Grade Road, Coraopolis, PA",2.0,5
+895,1,625,"301 South Negley Avenue,  Pittsburgh, PA",1.0,6
+900,2,900,"Duquesne, PA",1.0,6
+1350,2,860,"7 Dorchester Dr., Pittsburgh, PA",1.0,8
+815,1,500,"2910 Voelkel Avenue,  Pittsburgh, PA",1.0,6
+1495,2,1050,"916 Beaver Grade Road, Coraopolis, PA",2.0,3
+1628,1,580,"625 Stanwix Street, Pittsburgh, PA",1.0,6
+1395,2,860,"7 Dorchester Dr., Pittsburgh, PA",1.0,8
+1175,1,640,"916 Beaver Grade Road, Coraopolis, PA",1.0,7
+1695,3,1204,"143 Amabell Street, PA",1.0,6
+1695,2,1035,"7 Dorchester Dr., Pittsburgh, PA",1.5,8
+1695,3,820,"5747 Holden Street,  Pittsburgh, PA",2.0,6
+1275,1,640,"916 Beaver Grade Road, Coraopolis, PA",1.0,3
+1695,2,1035,"7 Dorchester Dr., Pittsburgh, PA",1.5,8
+1660,1,620,"625 Stanwix Street, Pittsburgh, PA",1.0,6
+1495,2,1050,"916 Beaver Grade Road, Coraopolis, PA",2.0,5
+1795,4,1075,"127 South 17th Street,  Pittsburgh, PA",2.5,6
+1350,2,842,"2123 Shady Ave - C1, Pittsburgh, PA",1.0,6
+1695,2,1035,"7 Dorchester Dr., Pittsburgh, PA",1.5,8
+1515,2,1050,"916 Beaver Grade Road, Coraopolis, PA",2.0,3
+1695,2,1035,"7 Dorchester Dr., Pittsburgh, PA",1.5,8
+2200,2,975,"625 Stanwix Street, Pittsburgh, PA",1.0,6
+1555,2,965,"916 Beaver Grade Road, Coraopolis, PA",1.0,3
+1750,3,1200,"1411 E Carson Street - 2, PA",1.0,6
+1450,2,860,"7 Dorchester Dr., Pittsburgh, PA",1.0,8
+1350,2,860,"7 Dorchester Dr., Pittsburgh, PA",1.0,8
+1265,1,750,"916 Beaver Grade Road, Coraopolis, PA",1.0,3
+1180,1,640,"7 Dorchester Dr., Pittsburgh, PA",1.0,8
+1660,1,620,"625 Stanwix Street, Pittsburgh, PA",1.0,6
+1515,2,1050,"916 Beaver Grade Road, Coraopolis, PA",2.0,7
+1350,2,860,"7 Dorchester Dr., Pittsburgh, PA",1.0,8
+1250,2,570,"430 Atwood Street, Pittsburgh, PA",1.0,6
+895,2,850,Bellevue,1.0,3
+1350,2,860,"7 Dorchester Dr., Pittsburgh, PA",1.0,8
+1490,2,1200,"Wexford, North Hills, McCandless",1.5,9
+1795,4,1075,"127 South 17th Street,  Pittsburgh, PA",2.5,6
+1495,2,1050,"916 Beaver Grade Road, Coraopolis, PA",2.0,5
+1450,2,860,"7 Dorchester Dr., Pittsburgh, PA",1.0,8
+1605,1,620,"625 Stanwix Street, Pittsburgh, PA",1.0,6
+1100,3,1595,Monroeville,2.0,5
+1495,2,1050,"916 Beaver Grade Road, Coraopolis, PA",2.0,5
+1350,2,860,"7 Dorchester Dr., Pittsburgh, PA",1.0,8
+950,2,765,"101 Mount Lebanon Boulevard, Pittsburgh, PA",1.0,6
+850,2,1397,"Pittsburgh, PA",2.0,5
+895,1,625,"301 South Negley Avenue,  Pittsburgh, PA",1.0,6
+1350,2,860,"7 Dorchester Dr., Pittsburgh, PA",1.0,8
+1345,1,750,"916 Beaver Grade Road, Coraopolis, PA",1.0,5
+889,2,825,Monroeville,1.0,6
+1350,2,860,"7 Dorchester Dr., Pittsburgh, PA",1.0,8
+1200,3,1300,Penn Hills,1.0,6
+2785,2,976,"625 Stanwix Street, Pittsburgh, PA",1.0,6
+1600,2,1035,"7 Dorchester Dr., Pittsburgh, PA",1.5,8
+1150,3,1300,Penn Hills,1.0,5
+1555,2,965,"916 Beaver Grade Road, Coraopolis, PA",1.0,5
+1250,2,570,"430 Atwood Street,  Pittsburgh, PA",1.0,6
+750,2,1200,McKeesport,1.0,3
+925,2,900,Verona,1.0,5
+739,1,650,Penn Hills,1.0,6
+1000,1,800,Ross,1.0,4
+1200,3,1300,Verona,1.0,7
+1350,2,860,"7 Dorchester Dr., Pittsburgh, PA",1.0,8
+889,2,850,Monroeville,1.0,6
+1475,3,1166,"519 Mifflin Ave - C - Designer,  Pittsburgh, PA",2.0,6
+950,1,800,North Hills,1.0,5
+950,1,800,North Hills,1.0,5
+950,1,800,North Hills,1.0,5
+1350,2,860,"7 Dorchester Dr., Pittsburgh, PA",1.0,8
+950,1,800,North Hills,1.0,5
+650,1,650,East Pittsburgh,1.0,5
+1025,1,800,North Hills,1.0,5
+1000,1,800,North Hills,1.0,4
+910,1,550,North Hills,1.0,6
