@@ -126,7 +126,7 @@ The weights were calculated based on the following formulation of this quadradic
 
 - Link to our presentation https://docs.google.com/presentation/d/1zto2DDfDRc9m0X1drAQJ9eYMI4gCOl_0CfD11_Fj8GU/edit#slide=id.g1cb5c65843b_0_5
 
-- Link to Tableau: TBD
+- Tableau: "Predicting and Analyzing Rent Prices.twb" file located in the code section under Dashboard.
 
 ## Findings
 
