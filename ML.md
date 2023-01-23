@@ -27,6 +27,7 @@ Submodels used in the Voting Regressor:
 - Gradient Boosting Regressor
 - Elastic Net
 - Random Forest Regressor
+- 
 
 The weights were calculated based on the following formulation of this quadradic optimization problem:
 

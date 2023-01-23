@@ -106,31 +106,107 @@ Next, the data was split into training and testing sets. I split 80% of the give
 - Random forest uses multiple independent decision trees in parallel to learn from data and accumulates their predictions for an outcome.
 - Random forest helps avoid overfitting which is one of the key problems with decision tree classifiers.
 
+### Model 2: Weighted Voting Regressor
 
-## Model 2a: Gradient Boosting Regressor
-### Overview
-## Model 2b: Weighted Voting Regressor
-### Overview
-The Voting Regressor combines the results of other models and will determine the best prediction for each input as the best prediction made by any of the models. Weights can be assigned to increase or decrease the amount a particular model impacts the results.
+## Summary
 
-For this problem, the goal is to construct a Voting Regressor with weights such that the Mean Squared Error (MSE) of the models is minimizeed.
+Several models were tested on the training data using cross validation scores with 15 folds to determine the estimated average mean squared error, the standard deviation, and a 95% confidence interval for the mean squared error for each of the 15 scores produced.
 
-### Methods
-Submodels used in the Voting Regressor:
-- Gradient Boosting Regressor
-- Elastic Net
-- Random Forest Regressor
+Based on these results, 8 models with the lowest mean and standard deviation of the mean squared error were selected. These models were then iterativley tuned using GridSearchCross Validation. The scores of the models were again calculated.
 
-The weights were calculated based on the following formulation of this quadradic optimization problem:
+After fitting the best estimators, weights for the Voting Regressor were calculated by minimizing the mean squared errors for each models prediction.
 
-**** Equation Here ****
+Using these weights and the eight estimators, the Voting Regressor model was initialized and trained on the data. It was scored in the same manner as previous models. The r squared value for the training and testing set were then calculated.
+
+### Data Prep
+
+The data includes information from nine cities grouped into three population classes from different regions of the United States. For the first model, the city identifier was dropped.
+
+The square footage data had significant outliers as shown below:
+
+![sqft](First%20Segment%20Rubric%20-%20ML/Voting_Regressor/figs/sqft.png)
+
+Outliers were determined on the basis of 1.5*IQR + third quartile. Lower outliers were negative. All rows containing outlier were dropped from the data.
+
+Training and test sets were created using Stratified Shuffle Spliting to control for an equal representation of each city. The sampling error as compared to regular Train Test Split is shown in the following table:
+
+![sampling_error](First%20Segment%20Rubric%20-%20ML/Voting_Regressor/figs/sampling_error.png)
+
+After removing price, the target variable, the training and testing sets were scaled using a RobustScaler. This was chosen over the StandardScaler due to its robustness to outliers. Although many were already eliminated, the RobustScaler further reduced the impact of outlier values.
+
+### Pre Tuning Models
+
+Several regression models were evaluated. Ideally, the Voting Regressor would combine the results of several diverse models. The majority of the selected models fell into the broad categories of tree based and linear. The scores each model were stored in a Pandas DataFrame and then sorted by average mean squared error and the standard deviation. The top 8 models from the list were chosen for tuning.
+
+![pre_tune](First%20Segment%20Rubric%20-%20ML/Voting_Regressor/figs/pre_tune_mse.png)
+
+### Post Tuning Models
+
+The models were tuned using Grid Search Cross Validation and scored as before. A DataFrame was again generated from these results.
+
+
+![post_tune](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/post_tune_mse.png)
+
+### Calculating Weights
+
+The objective funtion to be minimized is the mean squared error (MSE):
+
+$$Obj = {\left(1\over n \right)\sum_{i=1}^n}\left(y_i - w{y_p}^T\right)^2$$
+
+where:
+- $n$ = number of estimators
+- $y$ = True value
+- $w$ = vector containing the weights
+- $y_p$ = matrix of predicted values
+
+
+Constrained by:
+$$\sum_{k=1}^n w_k = 1$$
+and
+$$w_k > 0$$
+## Voting Regressor
+
+The voting Regressor was constructed using the calculated weights and the eight estimators. It was scored in the same manner and performed better than any of the individual models. The r squared values were then calculated.
+
+
+![r2](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/vrg_r2.png)
+
+Based on the r squared values, it appears overfitting of the training data may be occuring.
+
+### Expected vs. Predicted Values
+![exp_pred](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/pred_vs_actual_vrg.png)
+
+### Estimates of Each Model
+
+
+![mod_est](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/pred_vs_avg.png)
+
+### Further Exploration
+
+Although significantly reducing the ability to generalize, including the city identifier in the training data may improve performance. With the same preperation the results are as follows:
+
+The post tuning scores:
+
+![post_tune_city](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/post_tune_mse_with_city.png)
+
+The Voting Regressor r squared:
+
+![vot_reg_city](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/vrg_r2_with_city.png)
+
+Expected vs. Predicted:
+
+![exp_pred_city](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/pred_vs_actual_vrg_with_city.png)
+
+Estimator Predictions:
+
+![mod_est_city](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/pred_vs_avg_with_city.png)
 
 
 ## Presentation
 
 - Link to our presentation https://docs.google.com/presentation/d/1zto2DDfDRc9m0X1drAQJ9eYMI4gCOl_0CfD11_Fj8GU/edit#slide=id.g1cb5c65843b_0_5
 
-- Link to Tableau: TBD
+- Tableau: "Predicting and Analyzing Rent Prices.twb" file located in the code section under Dashboard.
 
 ## Findings
 
