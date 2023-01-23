@@ -84,11 +84,8 @@ The datasets contained the following features:
 - price
 - sqft
 - beds
-- laundry
-- pets
-- housing_type
-- parking 
-- hood_district
+- amenity_count
+- CityID
 
 **drop the hood_district** and **pets** features as it seemed irrelevant and would only confuse the ML model.
 
@@ -105,6 +102,22 @@ Next, the data was split into training and testing sets. I split 80% of the give
 - Random forest is an ensemble of the decision trees. It can be used for both classification and regression tasks.
 - Random forest uses multiple independent decision trees in parallel to learn from data and accumulates their predictions for an outcome.
 - Random forest helps avoid overfitting which is one of the key problems with decision tree classifiers.
+
+The random forest model had about an 80% accuracy score.
+
+![Screenshot 2023-01-22 at 8 56 22 PM](https://user-images.githubusercontent.com/110702997/213959148-e30ef77a-e0ef-48f1-bf87-a748e729cd67.png)
+
+After checking how much each feature correlates to the house rental prices the results were surprising. Each feature had a very low correlation to the rent costs as shown below.
+
+![Screenshot 2023-01-22 at 9 06 24 PM](https://user-images.githubusercontent.com/110702997/213960610-7bce84a0-750d-4031-a102-d17ce2c6d662.png)
+
+
+### Suggestions to Improve The Machine Learning Model
+
+There could be more specific features that would've improved the model. In the first rough draft of the model I had used one San Francisco house prices dataset from kaggle with about 1,000 rows of data. It had more specific features than the ones we used for our final model. The kaggle data set had features like: Parking, housing type, laundry, and pets. While we had condensed those all features down to one "amenity_count" feature. The kaggle data set with the random forest model rendered an accuracy score of 96%. Now this could be due to overfitting since only one city was used to train the model. Another factor that should be taken into consideration that we did not apply is the location of the house. Location as in wether the house was in a "good" area as in if its in close proximity to entertainment, major attractions, etc. We also could of used more data for each city, that would've trained the model better. The final random forest model that used all the city data that we web-scraped rendered an accuracy score of 80%. Although its not as high as the 96% of the first model it still does a decent job of predicting the **current** rent prices for the cities that were used to train the model.
+
+
+
 
 ### Model 2: Weighted Voting Regressor
 
