@@ -102,10 +102,7 @@ Next, the data was split into training and testing sets. I split 80% of the give
 
 The reason for using the random forest model was due to its high accuracy score of 96%. Random forest uses multiple independent decision trees in parallel to learn from data and accumulates their predictions for an outcome.
 
-
-## Model 2a: Gradient Boosting Regressor
-### Overview
-## Model 2b: Weighted Voting Regressor
+## Model 2: Weighted Voting Regressor
 ### Overview
 The Voting Regressor combines the results of other models and will determine the best prediction for each input as the best prediction made by any of the models. Weights can be assigned to increase or decrease the amount a particular model impacts the results.
 
