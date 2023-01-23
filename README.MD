@@ -100,7 +100,8 @@ Once those features were encoded I added them to original dataframe and dropped 
 
 Next, the data was split into training and testing sets. I split 80% of the given data into training the model and the remaining 20% will be used for testing the model. With these sets we can also determine the model's accuracy.
 
-The reason for using the random forest model was due to its high accuracy score of 96%. Random forest uses multiple independent decision trees in parallel to learn from data and accumulates their predictions for an outcome.
+- Random forest uses multiple independent decision trees in parallel to learn from data and accumulates their predictions for an outcome.
+- Random forest helps avoid overfitting which is one of the key problems with decision tree classifiers.
 
 
 ## Model 2a: Gradient Boosting Regressor
