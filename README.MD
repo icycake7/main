@@ -100,6 +100,9 @@ Once those features were encoded I added them to original dataframe and dropped 
 
 Next, the data was split into training and testing sets. I split 80% of the given data into training the model and the remaining 20% will be used for testing the model. With these sets we can also determine the model's accuracy.
 
+### Why Use Random Forest Regression Model?
+
+- Random forest is an ensemble of the decision trees. It can be used for both classification and regression tasks.
 - Random forest uses multiple independent decision trees in parallel to learn from data and accumulates their predictions for an outcome.
 - Random forest helps avoid overfitting which is one of the key problems with decision tree classifiers.
 
