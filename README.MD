@@ -87,16 +87,6 @@ The datasets contained the following features:
 - amenity_count
 - CityID
 
-**drop the hood_district** and **pets** features as it seemed irrelevant and would only confuse the ML model.
-
-After I had to encode the following features as they contained different categorical data. This step is necessary because the ML model needs to work on **numerical data only** for it to function.
-- laundry
-- housing_type
-
-Once those features were encoded I added them to original dataframe and dropped the original laundry and housing_type columns as they would be unnecessary at this point.
-
-Next, the data was split into training and testing sets. I split 80% of the given data into training the model and the remaining 20% will be used for testing the model. With these sets we can also determine the model's accuracy.
-
 ### Why Use Random Forest Regression Model?
 
 - Random forest is an ensemble of the decision trees. It can be used for both classification and regression tasks.
