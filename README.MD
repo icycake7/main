@@ -89,10 +89,9 @@ Our target variable is the price
 ### Why Use Random Forest Regression Model?
 
 - Random forest is an ensemble of the decision trees. It can be used for both classification and regression tasks.
-- Random forest uses multiple independent decision trees in parallel to learn from data and accumulates their predictions for an outcome.
 - Random forest helps avoid overfitting which is one of the key problems with decision tree classifiers.
 - The model can handle more types of data(continuous and discrete) that other linear regression models cannot. When I previously ran a linear regression model over the same dataset it was only able to render a R squared score of 16%.
-- This type of model is all very data "hungry" so the more data included the better it work
+- This type of model is all very data "hungry" so the more data included the better it work. Knowing this we wanted to gather as much house listing data as possible to train the model. 
 
 The random forest model had about an 85% R squared score.
 
