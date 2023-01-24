@@ -213,7 +213,7 @@ Estimator Predictions:
 
 - Link to our presentation https://docs.google.com/presentation/d/1zto2DDfDRc9m0X1drAQJ9eYMI4gCOl_0CfD11_Fj8GU/edit#slide=id.g1cb5c65843b_0_5
 
-- Tableau: "Predicting and Analyzing Rent Prices.twb" file located in the code section under Dashboard.
+- Tableau: [Dashboard](https://public.tableau.com/app/profile/icycake25489/viz/PredictingCurrentHousingPricesintheUS/PredictingCurrentHousingPricesintheUS)
 
 ## Findings
 
