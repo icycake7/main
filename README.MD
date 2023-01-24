@@ -67,8 +67,6 @@ We hosted the database on AWS RDS and connected it to pgAdmin. Then created a sc
 
 ### Preprocessing:
 - Use Imputer to convert NaN to usable values.
-- Encode any remaining categorical variables using dummies or OneHotEncoder.
-- Scale the features with StandardScalar
 
 ### Feature Selection:
 - Drop features that are not strongly correlated with target. Maintain as much non-colinearity as possible.
@@ -80,34 +78,28 @@ We hosted the database on AWS RDS and connected it to pgAdmin. Then created a sc
 ## Model 1: Random Forest Regressor
 ### Overview
 
-Using a **random forest machine learning model** to predict house prices from the city datasets that were scraped. 
+Using a **random forest machine learning model** to predict house prices from the city datasets that were scraped.
 
 The datasets contained the following features: 
-- price
 - sqft
 - beds
 - amenity_count
 - CityID
 
-**drop the hood_district** and **pets** features as it seemed irrelevant and would only confuse the ML model.
-
-After I had to encode the following features as they contained different categorical data. This step is necessary because the ML model needs to work on **numerical data only** for it to function.
-- laundry
-- housing_type
-
-Once those features were encoded I added them to original dataframe and dropped the original laundry and housing_type columns as they would be unnecessary at this point.
-
-Next, the data was split into training and testing sets. I split 80% of the given data into training the model and the remaining 20% will be used for testing the model. With these sets we can also determine the model's accuracy.
+Our target variable is the price
 
 ### Why Use Random Forest Regression Model?
 
 - Random forest is an ensemble of the decision trees. It can be used for both classification and regression tasks.
-- Random forest uses multiple independent decision trees in parallel to learn from data and accumulates their predictions for an outcome.
 - Random forest helps avoid overfitting which is one of the key problems with decision tree classifiers.
+- The model can handle more types of data(continuous and discrete) that other linear regression models cannot. When I previously ran a linear regression model over the same dataset it was only able to render a R squared score of 16%.
+- This type of model is all very data "hungry" so the more data included the better it work. Knowing this we wanted to gather as much house listing data as possible to train the model. 
 
-The random forest model had about an 80% accuracy score.
+The random forest model had about an 85% R squared score.
 
-![Screenshot 2023-01-22 at 8 56 22 PM](https://user-images.githubusercontent.com/110702997/213959148-e30ef77a-e0ef-48f1-bf87-a748e729cd67.png)
+![Screenshot 2023-01-23 at 9 55 45 PM](https://user-images.githubusercontent.com/110702997/214209200-6de8fcdd-bb66-4921-b55c-f20f88e95474.png)
+
+
 
 After checking how much each feature correlates to the house rental prices the results were surprising. Each feature had a very low correlation to the rent costs as shown below.
 
@@ -116,7 +108,7 @@ After checking how much each feature correlates to the house rental prices the r
 
 ### Suggestions to Improve The Machine Learning Model
 
-There could be more specific features that would've improved the model. In the first rough draft of the model I had used one San Francisco house prices dataset from kaggle with about 1,000 rows of data. It had more specific features than the ones we used for our final model. The kaggle data set had features like: Parking, housing type, laundry, and pets. While we had condensed those all features down to one "amenity_count" feature. The kaggle data set with the random forest model rendered an accuracy score of 96%. Now this could be due to overfitting since only one city was used to train the model. Another factor that should be taken into consideration that we did not apply is the location of the house. Location as in wether the house was in a "good" area as in if its in close proximity to entertainment, major attractions, etc. We also could of used more data for each city, that would've trained the model better. The final random forest model that used all the city data that we web-scraped rendered an accuracy score of 80%. Although its not as high as the 96% of the first model it still does a decent job of predicting the **current** rent prices for the cities that were used to train the model.
+There could be more specific features that would've improved the model. In the first rough draft of the model I had used one San Francisco house prices dataset from kaggle with about 1,000 rows of data. It had more specific features than the ones we used for our final model. The kaggle data set had features like: Parking, housing type, laundry, and pets. While we had condensed those all features down to one "amenity_count" feature. The kaggle data set with the random forest model rendered an R squared score of 96%. Now this could be due to overfitting since only one city was used to train the model. Another factor that should be taken into consideration that we did not apply is the location of the house. Location as in wether the house was in a "good" area as in if its in close proximity to entertainment, major attractions, etc. We also could of used more data for each city, that would've trained the model better. The final random forest model that used all the city data that we web-scraped rendered an accuracy score of 80%. Although its not as high as the 96% of the first model it still does a decent job of predicting the **current** rent prices for the cities that were used to train the model.
 
 
 
