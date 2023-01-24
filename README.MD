@@ -79,7 +79,6 @@ We hosted the database on AWS RDS and connected it to pgAdmin. Then loaded the c
 Using a **random forest machine learning model** to predict house prices from the city datasets that were scraped. 
 
 The datasets contained the following features: 
-- price
 - sqft
 - beds
 - amenity_count
