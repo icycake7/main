@@ -59,7 +59,7 @@ We scraped the data of home listings across small to large size US cities from c
 We cleaned the data using pandas. We Counted the number of amenities in each listing, dropped null rows, ensured there were no duplicates, converted the data types, dropped unimportant information, and exported the cleaned data into csv files. 
 
 ### Loading
-We hosted the database on AWS RDS and connected it to pgAdmin. Then loaded the clean csv data files into pgAdmin and used SQLAlchemy to create a connection string to the database. 
+We hosted the database on AWS RDS and connected it to pgAdmin. Then created a script to create all the needed tables. After that, we loaded the clean csv data files into pgAdmin and used SQLAlchemy to create a connection string to the database. 
 
 ![script.PNG](script.PNG)
 
