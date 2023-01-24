@@ -91,9 +91,11 @@ The datasets contained the following features:
 - Random forest helps avoid overfitting which is one of the key problems with decision tree classifiers.
 - The model can handle more types of data(continuous and discrete) that other models cannot.
 
-The random forest model had about an 80% R squared score.
+The random forest model had about an 85% R squared score.
 
-![Screenshot 2023-01-22 at 8 56 22 PM](https://user-images.githubusercontent.com/110702997/213959148-e30ef77a-e0ef-48f1-bf87-a748e729cd67.png)
+![Screenshot 2023-01-23 at 9 55 45 PM](https://user-images.githubusercontent.com/110702997/214209200-6de8fcdd-bb66-4921-b55c-f20f88e95474.png)
+
+
 
 After checking how much each feature correlates to the house rental prices the results were surprising. Each feature had a very low correlation to the rent costs as shown below.
 
