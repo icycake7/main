@@ -61,6 +61,8 @@ We cleaned the data using pandas. We Counted the number of amenities in each lis
 ### Loading
 We hosted the database on AWS RDS and connected it to pgAdmin. Then loaded the clean csv data files into pgAdmin and used SQLAlchemy to create a connection string to the database. 
 
+![script.PNG](script.PNG)
+
 ## Machine Learning Component
 
 ### Preprocessing:
