@@ -92,6 +92,7 @@ The datasets contained the following features:
 - Random forest is an ensemble of the decision trees. It can be used for both classification and regression tasks.
 - Random forest uses multiple independent decision trees in parallel to learn from data and accumulates their predictions for an outcome.
 - Random forest helps avoid overfitting which is one of the key problems with decision tree classifiers.
+- The model can handle more types of data(continuous and discrete) that other models cannot.
 
 The random forest model had about an 80% R squared score.
 
