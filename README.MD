@@ -76,13 +76,15 @@ We hosted the database on AWS RDS and connected it to pgAdmin. Then loaded the c
 ## Model 1: Random Forest Regressor
 ### Overview
 
-Using a **random forest machine learning model** to predict house prices from the city datasets that were scraped. 
+Using a **random forest machine learning model** to predict house prices from the city datasets that were scraped.
 
 The datasets contained the following features: 
 - sqft
 - beds
 - amenity_count
 - CityID
+- 
+Our target variable is the price
 
 ### Why Use Random Forest Regression Model?
 
