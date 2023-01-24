@@ -93,7 +93,7 @@ The datasets contained the following features:
 - Random forest uses multiple independent decision trees in parallel to learn from data and accumulates their predictions for an outcome.
 - Random forest helps avoid overfitting which is one of the key problems with decision tree classifiers.
 
-The random forest model had about an 80% accuracy score.
+The random forest model had about an 80% R squared score.
 
 ![Screenshot 2023-01-22 at 8 56 22 PM](https://user-images.githubusercontent.com/110702997/213959148-e30ef77a-e0ef-48f1-bf87-a748e729cd67.png)
 
