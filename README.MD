@@ -65,8 +65,6 @@ We hosted the database on AWS RDS and connected it to pgAdmin. Then loaded the c
 
 ### Preprocessing:
 - Use Imputer to convert NaN to usable values.
-- Encode any remaining categorical variables using dummies or OneHotEncoder.
-- Scale the features with StandardScalar
 
 ### Feature Selection:
 - Drop features that are not strongly correlated with target. Maintain as much non-colinearity as possible.
