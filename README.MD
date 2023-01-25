@@ -4,10 +4,10 @@
 ## Project Overview
 The rental market has been reshaped by coronavirus over the past few years. With inflation surging, interest rates have sky roketed along with rent. While rental prices all across America are likely to increase over the next coming years, some cities have been impacted more than others. 
 
-We would like to help the average american looking where to rent understand what markets are in his or her price range. We chose 9 different cities - 3 large, 3 midsize, 3 smaller across the US varing in population size based of off the United States Census Bureau. These cities vary from 300,000 population up to 4 million population. From those cities we scraped data of home listings from craigslist and pulled values such as price, number of bedrooms, sqft, bathrooms, etc. We will be using a Machine Learning Model Random Forest Regressor to Weighted Voting Regressor. 
+We would like to help the average american looking to rent understand what markets are in his or her price range. We chose 9 different cities - 3 large, 3 midsize, 3 small - across the US varing in population size based of off the United States Census Bureau. These cities vary from 300,000 population up to 4 million population. From those cities we scraped data of home listings from craigslist and pulled values such as price, number of bedrooms, sqft, bathrooms, etc. We will be using a Machine Learning Model Random Forest Regressor to Weighted Voting Regressor. 
 
 ## Questions We Hope to Answer 
-* How accurately can we predict future housing prices with our machine learning model.
+* How accurately can we predict future housing prices with our machine learning model?
 * How do the prices compare with the different amenities, bedroom number, sqft, location, etc?
 * How does population affect the housing prices?
 
@@ -56,7 +56,10 @@ We scraped the data of home listings across small to large size US cities from c
 - San Francisco Dataset Source -https://www.kaggle.com/datasets/thedevastator/scraping-apartments-off-of-craigslist-in-san-fra
 
 ### Transformation
-We cleaned the data using pandas. We Counted the number of amenities in each listing, dropped null rows, ensured there were no duplicates, converted the data types, dropped unimportant information, and exported the cleaned data into csv files. 
+We cleaned the data using Jupyter Notebook, pandas, json, numpy, re, db_password, and from sqlalchemy - create engine. After that, we counted the null values. Since we were not planning on using neighborhood and it contained many null values, we dropped neighborhood and then dropped all null values. After dropping date and title, we checked which columns needed to be converted. Some datasets contained values that were not integers in bedroom, bathroom, and price so we extracted/dropped those values. Then, we counted the number of amenities in each listing using REGEX and created a new row. We also created a City ID column. Finally, we exported the cleaned data into csv files. 
+
+<img width="569" alt="image" src="https://user-images.githubusercontent.com/110864175/214474270-77cec832-d05e-497e-bc74-ef2cbcd8392b.png">
+
 
 ### Loading
 We hosted the database on AWS RDS and connected it to pgAdmin. Then created a script to create all the needed tables. After that, we loaded the clean csv data files into pgAdmin and used SQLAlchemy to create a connection string to the database. 
@@ -95,7 +98,7 @@ Our target variable is the price
 - The model can handle more types of data(continuous and discrete) that other linear regression models cannot. When I previously ran a linear regression model over the same dataset it was only able to render a R squared score of 16%.
 - This type of model is data hungry so the more data included the better it work. Knowing this we wanted to gather as much house listing data as possible to train the model. 
 
-Scoring is based off negative mean squared error because we are looking for a positive score. So the more positive the number the better
+Scoring is based off negative mean squared error because we are looking for a positive score. So the more positive the number the better.
 The random forest model had about an 87% R squared score.
 
 ![Screenshot 2023-01-23 at 9 55 45 PM](https://user-images.githubusercontent.com/110702997/214209200-6de8fcdd-bb66-4921-b55c-f20f88e95474.png)
