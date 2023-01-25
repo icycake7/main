@@ -232,5 +232,7 @@ The image shows after plugging in the inputs into the random rorest regression m
 
 * How does population affect the housing prices?
 
+![Screenshot 2023-01-24 at 9 33 40 PM](https://user-images.githubusercontent.com/110702997/214474282-d863ce74-9544-4dd9-965b-0151d4e1760d.png)
+
 
 	
