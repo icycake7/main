@@ -9,3 +9,4 @@ joblib==1.1.1
 sqlalchemy==1.4.39
 psycopg2==2.9.5
 splinter==0.18.1
+beautifulsoup4==4.11.1
