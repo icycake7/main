@@ -47,7 +47,7 @@ We would like to help the average american looking where to rent understand what
 
 ## Databases
 
-![ERD-HousingPrices](ERD-HousingPrices.PNG)
+![ERD-HousingPrices.PNG](https://github.com/icycake7/main/blob/main/First%20Segment%20Rubric%20-%20Database%20Connection/ERD-HousingPrices.PNG))
 
 ## Data Collections - ETL
 ### Extraction
@@ -61,7 +61,7 @@ We cleaned the data using pandas. We Counted the number of amenities in each lis
 ### Loading
 We hosted the database on AWS RDS and connected it to pgAdmin. Then created a script to create all the needed tables. After that, we loaded the clean csv data files into pgAdmin and used SQLAlchemy to create a connection string to the database. 
 
-![script.PNG](script.PNG)
+![script.PNG](https://github.com/icycake7/main/blob/main/First%20Segment%20Rubric%20-%20Database%20Connection/script.PNG)
 
 ## Machine Learning Component
 
@@ -204,9 +204,6 @@ The r squared values were then calculated.
 
 Based on the r squared values, it appears overfitting of the training data may be occuring.
 
-### Expected vs. Predicted Values
-![exp_pred](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/pred_vs_actual_vrg_with_City.png)
-
 ### Residual Plot
 
 ![residuals](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/residual_plot.png)
@@ -218,7 +215,7 @@ Based on the r squared values, it appears overfitting of the training data may b
 
 ## Presentation
 
-- Link to our presentation https://docs.google.com/presentation/d/1zto2DDfDRc9m0X1drAQJ9eYMI4gCOl_0CfD11_Fj8GU/edit#slide=id.g1cb5c65843b_0_5
+- Presentation: [Presentation](https://docs.google.com/presentation/d/1zto2DDfDRc9m0X1drAQJ9eYMI4gCOl_0CfD11_Fj8GU/edit#slide=id.g1cb5c65843b_0_5)
 
 - Tableau: [Dashboard](https://public.tableau.com/app/profile/icycake25489/viz/PredictingCurrentHousingPricesintheUS/PredictingCurrentHousingPricesintheUS)
 
