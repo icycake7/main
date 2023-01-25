@@ -1,26 +1,24 @@
 
-# Predicting and Analyzing Rent Prices across the United States
+# Predicting and Analyzing Rental Prices across the United States
 
 ## Project Overview
-The rental market has been reshaped by coronavirus over the past few years. With inflation surging, interest rates have sky roketed along with rent. While rental prices all across America are likely to increase over the next coming years, some cities have been impacted more than others. 
+The rental market has been reshaped by coronavirus over the past few years. With inflation surging, interest rates have sky roketed along with rent. While rental prices all across the United States are likely to increase over the next coming years, some cities have been impacted more than others. 
 
-We would like to help the average american looking to rent understand what markets are in his or her price range. We chose 9 different cities - 3 large, 3 midsize, 3 small - across the US varing in population size based of off the United States Census Bureau. These cities vary from 300,000 population up to 4 million population. From those cities we scraped data of home listings from craigslist and pulled values such as price, number of bedrooms, sqft, bathrooms, etc. We will be using a Machine Learning Model Random Forest Regressor to Weighted Voting Regressor. 
+We would like to help the average American looking to rent understand what markets are in his or her price range. We chose 9 different cities - 3 large, 3 midsize, 3 small - across the US varing in population size based of off the [United States Census Bureau](https://www.census.gov/). These cities vary from 300,000 population up to 4 million population. From those cities we scraped data of rental listings from craigslist and pulled values such as price, number of bedrooms, sqft, bathrooms, and various amenities. We will be using two Machine Learning Models to assess our results, namely the Random Forest Regressor and Weighted Voting Regressor Model.
 
 ## Questions We Hope to Answer 
 * How accurately can we predict future housing prices with our machine learning model?
-* How do the prices compare with the different amenities, bedroom number, sqft, location, etc?
-* How does population affect the housing prices?
+* How do the prices compare with the different amenities, bedroom numbers, sqft, location, etc?
+* How does population affect rental prices?
 
 ## Communication protocols
-### Tools: 
-- Slack, Zoom, Google Slides, AWS RDS
 
 ### Individual roles:
 
  #### Dabasebase Management / Integration:
 - Pascal, Gabi, Adriana
 
- #### Machine Learning:
+ #### Machine Learning Models:
 - Victor and Mark
 
 #### Presenatation / Dashboard:
@@ -28,6 +26,10 @@ We would like to help the average american looking to rent understand what marke
 
 
 ## Tools
+
+### Communication
+- Slack, Zoom, Google Slides, AWS RDS
+
 ### Databases
 * Scraping Tools: Python, Jupyter Notebook, Splinter, BeautifulSoup
 * Transforming/Cleaning Tools: Pandas, JSON, Numpy, Jupyter Notebook
@@ -85,7 +87,7 @@ We hosted the database on AWS RDS and connected it to pgAdmin. Then created a sc
 ## Model 1: Random Forest Regressor
 ### Overview
 
-Using a **random forest machine learning model** to predict house prices from the city datasets that were scraped.
+Using a **random forest machine learning model** to predict rental prices from the city datasets that were scraped.
 
 The datasets contained the following features: 
 - sqft
@@ -100,10 +102,10 @@ Our target variable is the price
 - Random forest is an ensemble of the decision trees. It can be used for both classification and regression tasks.
 - Random forest helps avoid overfitting which is one of the key problems with decision tree classifiers.
 - The model can handle more types of data(continuous and discrete) that other linear regression models cannot. When I previously ran a linear regression model over the same dataset it was only able to render a R squared score of 16%.
-- This type of model is data hungry so the more data included the better it work. Knowing this we wanted to gather as much house listing data as possible to train the model. 
+- This type of model is data hungry so the more data included the better it works. Knowing this, we wanted to gather as much rental listing data as possible to train the model. 
 
 Scoring is based off negative mean squared error because we are looking for a positive score. So the more positive the number the better.
-The random forest model had about an 87% R squared score.
+The random forest model had an R squared score of about 87%.
 
 ![Screenshot 2023-01-23 at 9 55 45 PM](https://user-images.githubusercontent.com/110702997/214209200-6de8fcdd-bb66-4921-b55c-f20f88e95474.png)
 
@@ -116,7 +118,7 @@ After checking how much each feature correlates to the house rental prices the r
 
 ### Suggestions to Improve The Machine Learning Model
 
-There could be more specific features that would've improved the model. In the first rough draft of the model I had used one San Francisco house prices dataset from kaggle with about 1,000 rows of data. It had more specific features than the ones we used for our final model. The kaggle data set had features like: Parking, housing type, laundry, and pets. While we had condensed those all features down to one "amenity_count" feature. The kaggle data set with the random forest model rendered an R squared score of 96%. Now this could be due to overfitting since only one city was used to train the model. Another factor that should be taken into consideration that we did not apply is the location of the house. Location as in wether the house was in a "good" area as in if its in close proximity to entertainment, major attractions, etc. We also could of used more data for each city, that would've trained the model better. The final random forest model that used all the city data that we web-scraped rendered an accuracy score of 80%. Although its not as high as the 96% of the first model it still does a decent job of predicting the **current** rent prices for the cities that were used to train the model.
+There could be more specific features that would've improved the model. In the first rough draft of the model, I had used one of San Francisco house prices dataset from kaggle with about 1,000 rows of data. It had more specific features than the ones we used for our final model. The kaggle data set had features like: Parking, housing type, laundry, and pets. While we had condensed all those features down to one "amenity_count" feature. The kaggle data set with the random forest model rendered an R squared score of 96%. Now this could be due to overfitting since only one city was used to train the model. Another factor that should be taken into consideration, that we did not apply, is the location of the house. Location as in wether the house was in a "good" area as in if its in close proximity to entertainment, major attractions, etc. We also could have used more data for each city, that would've trained the model better. The final random forest model that used all the city data that we web-scraped rendered an accuracy score of 80%. Although its not as high as the 96% of the first model it still does a decent job of predicting the **current** rent prices for the cities that were used to train the model.
 
 
 
@@ -230,7 +232,7 @@ Based on the r squared values, it appears overfitting of the training data may b
 1. How accurately can we predict future housing prices with our machine learning model.
 
 ![Screenshot 2023-01-24 at 9 04 48 PM](https://user-images.githubusercontent.com/110702997/214471208-e77b34a9-51e0-45d8-9e8a-cab894c0d283.png)
-The image shows after plugging in the inputs into the random rorest regression model (number of bedrooms, sqft, number of bathrooms, number of amenities) then you will get a prediction of the price of the monthly rent of the requirements you are looking for. The random forest model rendered an 86% score. Scoring is based off negative mean squared error because we are looking for a positive score. So the more positive the number the better. 
+The image above shows that after plugging in the inputs into the random forest regression model (number of bedrooms, sqft, number of bathrooms, number of amenities) then you will get a prediction of the price of the monthly rent of the requirements you are looking for. The random forest model rendered an 86% score. Scoring is based off negative mean squared error because we are looking for a positive score. So the more positive the number the better. 
 
 2. How do the prices compare with the different amenities, bedroom number, sqft, location, etc?
 
@@ -238,5 +240,5 @@ The image shows after plugging in the inputs into the random rorest regression m
 
 ![Screenshot 2023-01-24 at 9 33 40 PM](https://user-images.githubusercontent.com/110702997/214474282-d863ce74-9544-4dd9-965b-0151d4e1760d.png)
 
-The graphs above shows the average prices of monthly rent from each of the 9 cities of our research also along with the population size of each city. You can see that higher populated cities do tend to have higher prices. There are definitely other factors that raise the house prices that our models didn't pick up due to lack of data. The location could be a major factor in some of the higher prices, for example San Francisco had the most expensive housing average while Los Angeles was the most populated. San Francisco could be a more desireable place to live than Los Angeles.
+The graphs above shows the average prices of monthly rent from each of the 9 cities of our research also along with the population size of each city. You can see that higher populated cities do tend to have higher prices. There are definitely other factors that raise the rental prices that our models didn't pick up due to lack of data. The location could be a major factor in some of the higher prices, for example San Francisco had the most expensive rental price average while Los Angeles was the most populated. San Francisco could be a more desireable place to live in than Los Angeles.
 	
