@@ -290,4 +290,4 @@ Though population seems to influence average price, without controlling for othe
 
 ![pop_stats](Machine%20Learning/Voting_Regressor//figs/avg_price_pop_ttest.png)
 	
-The P-Values have been rouded due to their extremley small size.
+The P-Values have been rounded due to their extremley small size.
