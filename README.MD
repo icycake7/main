@@ -203,9 +203,6 @@ The r squared values were then calculated.
 
 Based on the r squared values, it appears overfitting of the training data may be occuring.
 
-### Expected vs. Predicted Values
-![exp_pred](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/pred_vs_actual_vrg_with_City.png)
-
 ### Residual Plot
 
 ![residuals](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/residual_plot.png)
