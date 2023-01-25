@@ -33,7 +33,7 @@ We would like to help the average American looking to rent understand what marke
 ### Databases
 * Scraping Tools: Python, Jupyter Notebook, Splinter, BeautifulSoup
 * Transforming/Cleaning Tools: Pandas, JSON, NumPy, Jupyter Notebook
-* Loading Tools: Jupyter notebook, pgAdmin, AWS RDS
+* Loading Tools: Jupyter Notebook, pgAdmin, AWS RDS
 
 ### Machine Learning
 * Random Forest Model
@@ -62,7 +62,7 @@ A sample data output created while scraping the city of Los Angeles:
 ![Los Angles](https://github.com/icycake7/main/blob/main/Database%20-%20Extract/losangeles.png)
 
 ### Transformation
-We cleaned the data using Jupyter Notebook, pandas, json, NumPy, re, db_password, and from sqlalchemy - create engine. After that, we counted the null values. Since we were not planning on using neighborhood and it contained many null values, we dropped neighborhood and then dropped all null values. After dropping date and title, we checked which columns needed to be converted. Some datasets contained values that were not integers in bedroom, bathroom, and price so we extracted/dropped those values. Then, we counted the number of amenities in each listing using REGEX and created a new row. We also created a City ID column. Finally, we exported the cleaned data into csv files. 
+We cleaned the data using Jupyter Notebook, pandas, JSON, NumPy, RE, DB_PASSWORD, and from SQLAlchemy - create engine. After that, we counted the null values. Since we were not planning on using neighborhood and it contained many null values, we dropped neighborhood and then dropped all null values. After dropping date and title, we checked which columns needed to be converted. Some datasets contained values that were not integers in bedroom, bathroom, and price so we extracted/dropped those values. Then, we counted the number of amenities in each listing using REGEX and created a new row. We also created a City ID column. Finally, we exported the cleaned data into csv files. 
 
 <img width="569" alt="image" src="https://user-images.githubusercontent.com/110864175/214474270-77cec832-d05e-497e-bc74-ef2cbcd8392b.png">
 
