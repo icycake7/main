@@ -98,7 +98,7 @@ Our target variable is the price
 - The model can handle more types of data(continuous and discrete) that other linear regression models cannot. When I previously ran a linear regression model over the same dataset it was only able to render a R squared score of 16%.
 - This type of model is data hungry so the more data included the better it work. Knowing this we wanted to gather as much house listing data as possible to train the model. 
 
-Scoring is based off negative mean squared error because we are looking for a positive score. So the more positive the number the better
+Scoring is based off negative mean squared error because we are looking for a positive score. So the more positive the number the better.
 The random forest model had about an 87% R squared score.
 
 ![Screenshot 2023-01-23 at 9 55 45 PM](https://user-images.githubusercontent.com/110702997/214209200-6de8fcdd-bb66-4921-b55c-f20f88e95474.png)
