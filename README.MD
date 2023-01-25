@@ -47,7 +47,7 @@ We would like to help the average american looking to rent understand what marke
 
 ## Databases
 
-![ERD-HousingPrices](ERD-HousingPrices.PNG)
+![ERD-HousingPrices.PNG](https://github.com/icycake7/main/blob/main/First%20Segment%20Rubric%20-%20Database%20Connection/ERD-HousingPrices.PNG))
 
 ## Data Collections - ETL
 ### Extraction
@@ -64,7 +64,7 @@ We cleaned the data using Jupyter Notebook, pandas, json, numpy, re, db_password
 ### Loading
 We hosted the database on AWS RDS and connected it to pgAdmin. Then created a script to create all the needed tables. After that, we loaded the clean csv data files into pgAdmin and used SQLAlchemy to create a connection string to the database. 
 
-![script.PNG](script.PNG)
+![script.PNG](https://github.com/icycake7/main/blob/main/First%20Segment%20Rubric%20-%20Database%20Connection/script.PNG)
 
 ## Machine Learning Component
 
@@ -96,9 +96,10 @@ Our target variable is the price
 - Random forest is an ensemble of the decision trees. It can be used for both classification and regression tasks.
 - Random forest helps avoid overfitting which is one of the key problems with decision tree classifiers.
 - The model can handle more types of data(continuous and discrete) that other linear regression models cannot. When I previously ran a linear regression model over the same dataset it was only able to render a R squared score of 16%.
-- This type of model is all very data "hungry" so the more data included the better it work. Knowing this we wanted to gather as much house listing data as possible to train the model. 
+- This type of model is data hungry so the more data included the better it work. Knowing this we wanted to gather as much house listing data as possible to train the model. 
 
-The random forest model had about an 85% R squared score.
+Scoring is based off negative mean squared error because we are looking for a positive score. So the more positive the number the better
+The random forest model had about an 87% R squared score.
 
 ![Screenshot 2023-01-23 at 9 55 45 PM](https://user-images.githubusercontent.com/110702997/214209200-6de8fcdd-bb66-4921-b55c-f20f88e95474.png)
 
@@ -206,9 +207,6 @@ The r squared values were then calculated.
 
 Based on the r squared values, it appears overfitting of the training data may be occuring.
 
-### Expected vs. Predicted Values
-![exp_pred](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/pred_vs_actual_vrg_with_City.png)
-
 ### Residual Plot
 
 ![residuals](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/residual_plot.png)
@@ -220,10 +218,19 @@ Based on the r squared values, it appears overfitting of the training data may b
 
 ## Presentation
 
-- Link to our presentation https://docs.google.com/presentation/d/1zto2DDfDRc9m0X1drAQJ9eYMI4gCOl_0CfD11_Fj8GU/edit#slide=id.g1cb5c65843b_0_5
+- Presentation: [Presentation](https://docs.google.com/presentation/d/1zto2DDfDRc9m0X1drAQJ9eYMI4gCOl_0CfD11_Fj8GU/edit#slide=id.g1cb5c65843b_0_5)
 
 - Tableau: [Dashboard](https://public.tableau.com/app/profile/icycake25489/viz/PredictingCurrentHousingPricesintheUS/PredictingCurrentHousingPricesintheUS)
 
 ## Findings
+* How accurately can we predict future housing prices with our machine learning model.
+
+![Screenshot 2023-01-24 at 9 04 48 PM](https://user-images.githubusercontent.com/110702997/214471208-e77b34a9-51e0-45d8-9e8a-cab894c0d283.png)
+The image shows after plugging in the inputs that you are looking for (number of bedrooms, sqft, number of bathrooms, number of amenities) then you will get a prediction of the price of the monthly rent of the requirements you are looking for.
+
+* How do the prices compare with the different amenities, bedroom number, sqft, location, etc?
+
+* How does population affect the housing prices?
+
 
 	
