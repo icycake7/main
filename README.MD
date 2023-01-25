@@ -93,9 +93,10 @@ Our target variable is the price
 - Random forest is an ensemble of the decision trees. It can be used for both classification and regression tasks.
 - Random forest helps avoid overfitting which is one of the key problems with decision tree classifiers.
 - The model can handle more types of data(continuous and discrete) that other linear regression models cannot. When I previously ran a linear regression model over the same dataset it was only able to render a R squared score of 16%.
-- This type of model is all very data "hungry" so the more data included the better it work. Knowing this we wanted to gather as much house listing data as possible to train the model. 
+- This type of model is data hungry so the more data included the better it work. Knowing this we wanted to gather as much house listing data as possible to train the model. 
 
-The random forest model had about an 85% R squared score.
+Scoring is based off negative mean squared error because we are looking for a positive score. So the more positive the number the better
+The random forest model had about an 87% R squared score.
 
 ![Screenshot 2023-01-23 at 9 55 45 PM](https://user-images.githubusercontent.com/110702997/214209200-6de8fcdd-bb66-4921-b55c-f20f88e95474.png)
 
@@ -219,5 +220,14 @@ Based on the r squared values, it appears overfitting of the training data may b
 - Tableau: [Dashboard](https://public.tableau.com/app/profile/icycake25489/viz/PredictingCurrentHousingPricesintheUS/PredictingCurrentHousingPricesintheUS)
 
 ## Findings
+* How accurately can we predict future housing prices with our machine learning model.
+
+![Screenshot 2023-01-24 at 9 04 48 PM](https://user-images.githubusercontent.com/110702997/214471208-e77b34a9-51e0-45d8-9e8a-cab894c0d283.png)
+The image shows after plugging in the inputs that you are looking for (number of bedrooms, sqft, number of bathrooms, number of amenities) then you will get a prediction of the price of the monthly rent of the requirements you are looking for.
+
+* How do the prices compare with the different amenities, bedroom number, sqft, location, etc?
+
+* How does population affect the housing prices?
+
 
 	
