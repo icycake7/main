@@ -127,9 +127,13 @@ There could be more specific features that would've improved the model. In the f
 
 ## Summary
 
+A Voting Regressor was chosen for evaluation in an attempt to improve accuracy over a single estimator. When a Voting Regressor is constructed with a diverse selection of estimators it may produce lower error than any single estimator within it. This is in part a product of the errors made by the individual estimators themselves. If all the estimators are based on the same processs, such as all linear regression models, the types of errors they make will be similar. If instead a diverse set of estimators is employed the types of errors they make will often be different from eachother. This estimator diversity is the key to constructing a Voting Regressor that outpreforms a single estimator and also provides its robustness.
+
+The default implementation of the Voting Regressor in Scikit-Learn uses the mean of the predictions from each estimator. With the assumption that the importance of each estimator is not equal, a weighted average will be applied.
+
 Several models were tested on the training data using cross validation scores with 15 folds to determine the estimated average mean squared error, the standard deviation, and a 95% confidence interval for the mean squared error for each of the 15 scores produced.
 
-Based on these results, 8 models with the lowest mean and standard deviation of the mean squared error were selected. These models were then iteratively tuned using GridSearchCross Validation. The scores of the models were again calculated.
+Based on these results, 9 models with the lowest mean and standard deviation of the mean squared error were selected. These models were then iteratively tuned using GridSearchCross Validation. The scores of the models were again calculated.
 
 After fitting the best estimators, weights for the Voting Regressor were calculated by minimizing the mean squared errors for each model’s prediction.
 
@@ -183,6 +187,10 @@ A DataFrame was again generated from these results.
 
 ![post_tune](Machine%20Learning/Voting_Regressor//figs/post_tune_mse.png)
 
+Additionally, the Bias and Variance of each model was estimated. These metrics assist in understanding the bias-variance tradeoff for each of the models.
+
+![post_tune_bias_var](Machine%20Learning/Voting_Regressor//figs/bias_var_final_estimators.png)
+
 ### Calculating Weights
 
 The objective function to be minimized is the mean squared error (MSE):
@@ -204,14 +212,40 @@ $$w_k > 0$$
 
 The voting Regressor was constructed using the calculated weights and the 9 estimators. It was scored in the same manner and performed better than any of the individual models. 
 
-![vrg_cvscore](Machine%20Learning/Voting_Regressor//figs/mod_eval.png)
+![vrg_cvscore](Machine%20Learning/Voting_Regressor//figs/mod_eval._pre_red.png)
 
-The r squared values were then calculated.
+Additionally, the Bias and Variance were estimated:
+
+![bias_var_pre_reduction](Machine%20Learning/Voting_Regressor//figs/bias_var_pre_reduction.png)
 
 
-![r2](Machine%20Learning/Voting_Regressor//figs/vrg_r2_with_city.png)
+The r squared values were then calculated to estimate the percentage of variation explained by the model.
 
-Based on the r squared values, it appears overfitting of the training data may be occurring.
+
+![r2](Machine%20Learning/Voting_Regressor//figs/vrg_r2_pre_reduction.png)
+
+
+### Reduction in Model Complexity
+
+Although the MSE and r squared values for the training and test sets were not seperated by a large margin, model complexity was reduced in an attempt to reconcile the scores. Out of the nine original estimators included in the Voting Regressor, the five with the highest weights were kept. The structure of the final model is shown below:
+
+![final_structure](Machine%20Learning/Voting_Regressor//figs/final_vrg_structure.png)
+
+The reduced model includes two decision tree based estimators, a k nearest regressor baseed on clusting, a polynomial kernel support vector regressor, and a linear regressor with L1 weighting.
+
+The performance meterics were as follows:
+
+![mod_eval_post_reduction](Machine%20Learning/Voting_Regressor//figs/mod_eval.png)
+
+Estimated Bias and Variance:
+
+![bias_var_post_reduction](Machine%20Learning/Voting_Regressor//figs/bias_var_post_reduction.png)
+
+r squared values:
+
+![r_2_post_reduction](Machine%20Learning/Voting_Regressor//figs/vrg_r2_with_city.png)
+
+Overall, this model with reduced complexity performed better than the original iteration with nine estimators. Further refinement could yield additional benifits.
 
 ### Residual Plot
 
@@ -236,10 +270,24 @@ The image above shows that after plugging in the inputs into the random forest r
 
 2. How do the prices compare with the different amenities, bedroom number, sqft, location, etc.?
 
+The correlations suggested that no single feature was strongly associated with a change in the target variable. The correlation of each feature with respect to price is reprinted below.
+
+![corr_wrt_price](Machine%20Learning/Voting_Regressor//figs/corr_with_price_text.png)
+
+As expected before analysis, the size (sqft) of the property plays the most significant role. The number of bedrooms and bathrooms also play an important role. None of these features is highly explanitory of the target variable.
+
+The number of amenities present at the property was the least correlated feature. Before analysis it was expected that this feature would play a more significant role.
+
+Two features added specifically to the Voting Regressor were the cityid and the pop_class or population group. While weakly correlated, the population grouping demonstrates explanitory power near that of bedrooms and bathrooms. The city identifier, or cityid, was second in predictive power to sqft. This indicates that nuances of each city's rental market or other city specific factors may play a larger role than anticipated.
+
 3. How does population affect the housing prices?
 
 ![Screenshot 2023-01-24 at 9 33 40 PM](https://user-images.githubusercontent.com/110702997/214474282-d863ce74-9544-4dd9-965b-0151d4e1760d.png)
 
 The graphs above shows the average prices of monthly rent from each of the 9 cities of our research also along with the population size of each city. You can see that higher populated cities do tend to have higher prices. There are definitely other factors that raise the rental prices that our models didn't pick up due to lack of data. The location could be a major factor in some of the higher prices, for example San Francisco had the most expensive rental price average while Los Angeles was the most populated. San Francisco could be a more desirable place to live in than Los Angeles.
-	
 
+Though population seems to influence average price, without controlling for other factors, there is not a statistically significant difference between the average rent price overall and the average rent prices of the three population groups.
+
+![pop_stats](Machine%20Learning/Voting_Regressor//figs/avg_price_pop_ttest.png)
+	
+The P-Values have been rouded due to their extremley small size.
