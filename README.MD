@@ -127,13 +127,28 @@ Using these weights and the eight estimators, the Voting Regressor model was ini
 
 ### Data Prep
 
-The data includes information from nine cities grouped into three population classes from different regions of the United States. For the first model, the city identifier was dropped.
+The data includes information from nine cities grouped into three population classes from different regions of the United States. The target variable was price with features: sqft, bedroom, bathroom, pop_class, cityid.
+
+The price was heavily right tailed and a log transformation was used to create a more gaussian shape.
+
+### Pre log Transform
+
+![pre_log](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/price.png)
+
+### Post log Transform
+
+![exp_pred](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/log_price.png)
+
 
 The square footage data had significant outliers as shown below:
 
 ![sqft](First%20Segment%20Rubric%20-%20ML/Voting_Regressor/figs/sqft.png)
 
 Outliers were determined on the basis of 1.5*IQR + third quartile. Lower outliers were negative. All rows containing outlier were dropped from the data.
+
+The correlation was explored through a heatmap, showing that none of the individual features were able to explain the target.
+
+![co](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/corr_heatmap.png)
 
 Training and test sets were created using Stratified Shuffle Spliting to control for an equal representation of each city. The sampling error as compared to regular Train Test Split is shown in the following table:
 
@@ -149,7 +164,11 @@ Several regression models were evaluated. Ideally, the Voting Regressor would co
 
 ### Post Tuning Models
 
-The models were tuned using Grid Search Cross Validation and scored as before. A DataFrame was again generated from these results.
+The models were tuned using Grid Search Cross Validation and scored as before, an example from the code is shown below:
+
+![exp_pred](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/grid_search_ex.png)
+
+ A DataFrame was again generated from these results.
 
 
 ![post_tune](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/post_tune_mse.png)
@@ -173,40 +192,27 @@ and
 $$w_k > 0$$
 ## Voting Regressor
 
-The voting Regressor was constructed using the calculated weights and the eight estimators. It was scored in the same manner and performed better than any of the individual models. The r squared values were then calculated.
+The voting Regressor was constructed using the calculated weights and the 9 estimators. It was scored in the same manner and performed better than any of the individual models. 
+
+![vrg_cvscore](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/mod_eval.png)
+
+The r squared values were then calculated.
 
 
-![r2](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/vrg_r2.png)
+![r2](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/vrg_r2_with_city.png)
 
 Based on the r squared values, it appears overfitting of the training data may be occuring.
 
 ### Expected vs. Predicted Values
-![exp_pred](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/pred_vs_actual_vrg.png)
+![exp_pred](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/pred_vs_actual_vrg_with_City.png)
+
+### Residual Plot
+
+![residuals](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/residual_plot.png)
 
 ### Estimates of Each Model
 
-
-![mod_est](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/pred_vs_avg.png)
-
-### Further Exploration
-
-Although significantly reducing the ability to generalize, including the city identifier in the training data may improve performance. With the same preperation the results are as follows:
-
-The post tuning scores:
-
-![post_tune_city](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/post_tune_mse_with_city.png)
-
-The Voting Regressor r squared:
-
-![vot_reg_city](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/vrg_r2_with_city.png)
-
-Expected vs. Predicted:
-
-![exp_pred_city](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/pred_vs_actual_vrg_with_city.png)
-
-Estimator Predictions:
-
-![mod_est_city](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/pred_vs_avg_with_city.png)
+![mod_est](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/pred_vs_avg_with_city.png)
 
 
 ## Presentation
