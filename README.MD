@@ -55,7 +55,7 @@ We scraped the data of home listings across small to large size US cities from c
 
 - San Francisco Sample Dataset Source -https://www.kaggle.com/datasets/thedevastator/scraping-apartments-off-of-craigslist-in-san-fra
 
-A sample data output we created while scraping the city of Los Angeles:
+A sample data output created while scraping the city of Los Angeles:
 
 ![Los Angles](https://github.com/icycake7/main/blob/main/Database%20-%20Extract/losangeles.png)
 
