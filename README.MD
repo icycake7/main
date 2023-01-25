@@ -47,13 +47,17 @@ We would like to help the average american looking to rent understand what marke
 
 ## Databases
 
-![ERD-HousingPrices.PNG](https://github.com/icycake7/main/blob/main/First%20Segment%20Rubric%20-%20Database%20Connection/ERD-HousingPrices.PNG))
+![ERD-HousingPrices.PNG](https://github.com/icycake7/main/blob/main/Database%20-%20Load/ERD-HousingPrices.PNG)
 
 ## Data Collections - ETL
 ### Extraction
-We scraped the data of home listings across small to large size US cities from craigslist. Using "thedevastator" as sample model, we then proceeded to scrape 2022-2023 "apartments / housing for rent" data from Los Angeles, Chicago, Houston, Austin,  Boston, San Francisco, Pittsburgh, Chandler and Spokane.
+We scraped the data of home listings across small to large size US cities from craigslist. Using "thedevastator" as sample model, we then proceeded to scrape 2023 "apartments / housing for rent" data from Los Angeles, Chicago, Houston, Austin, Boston, San Francisco, Pittsburgh, Chandler and Spokane.
 
-- San Francisco Dataset Source -https://www.kaggle.com/datasets/thedevastator/scraping-apartments-off-of-craigslist-in-san-fra
+- San Francisco Sample Dataset Source -https://www.kaggle.com/datasets/thedevastator/scraping-apartments-off-of-craigslist-in-san-fra
+
+A sample data output we created while scraping the city of Los Angeles:
+
+![Los Angles](https://github.com/icycake7/main/blob/main/Database%20-%20Extract/losangeles.png)
 
 ### Transformation
 We cleaned the data using Jupyter Notebook, pandas, json, numpy, re, db_password, and from sqlalchemy - create engine. After that, we counted the null values. Since we were not planning on using neighborhood and it contained many null values, we dropped neighborhood and then dropped all null values. After dropping date and title, we checked which columns needed to be converted. Some datasets contained values that were not integers in bedroom, bathroom, and price so we extracted/dropped those values. Then, we counted the number of amenities in each listing using REGEX and created a new row. We also created a City ID column. Finally, we exported the cleaned data into csv files. 
@@ -64,7 +68,7 @@ We cleaned the data using Jupyter Notebook, pandas, json, numpy, re, db_password
 ### Loading
 We hosted the database on AWS RDS and connected it to pgAdmin. Then created a script to create all the needed tables. After that, we loaded the clean csv data files into pgAdmin and used SQLAlchemy to create a connection string to the database. 
 
-![script.PNG](https://github.com/icycake7/main/blob/main/First%20Segment%20Rubric%20-%20Database%20Connection/script.PNG)
+![script.PNG](https://github.com/icycake7/main/blob/main/Database%20-%20Load/script.PNG)
 
 ## Machine Learning Component
 
@@ -137,26 +141,26 @@ The price was heavily right tailed and a log transformation was used to create a
 
 ### Pre log Transform
 
-![pre_log](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/price.png)
+![pre_log](Machine%20Learning/Voting_Regressor//figs/price.png)
 
 ### Post log Transform
 
-![exp_pred](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/log_price.png)
+![exp_pred](Machine%20Learning/Voting_Regressor//figs/log_price.png)
 
 
 The square footage data had significant outliers as shown below:
 
-![sqft](First%20Segment%20Rubric%20-%20ML/Voting_Regressor/figs/sqft.png)
+![sqft](Machine%20Learning/Voting_Regressor/figs/sqft.png)
 
 Outliers were determined on the basis of 1.5*IQR + third quartile. Lower outliers were negative. All rows containing outlier were dropped from the data.
 
 The correlation was explored through a heatmap, showing that none of the individual features were able to explain the target.
 
-![co](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/corr_heatmap.png)
+![co](Machine%20Learning/Voting_Regressor//figs/corr_heatmap.png)
 
 Training and test sets were created using Stratified Shuffle Spliting to control for an equal representation of each city. The sampling error as compared to regular Train Test Split is shown in the following table:
 
-![sampling_error](First%20Segment%20Rubric%20-%20ML/Voting_Regressor/figs/sampling_error.png)
+![sampling_error](Machine%20Learning/Voting_Regressor/figs/sampling_error.png)
 
 After removing price, the target variable, the training and testing sets were scaled using a RobustScaler. This was chosen over the StandardScaler due to its robustness to outliers. Although many were already eliminated, the RobustScaler further reduced the impact of outlier values.
 
@@ -164,18 +168,18 @@ After removing price, the target variable, the training and testing sets were sc
 
 Several regression models were evaluated. Ideally, the Voting Regressor would combine the results of several diverse models. The majority of the selected models fell into the broad categories of tree based and linear. The scores each model were stored in a Pandas DataFrame and then sorted by average mean squared error and the standard deviation. The top 8 models from the list were chosen for tuning.
 
-![pre_tune](First%20Segment%20Rubric%20-%20ML/Voting_Regressor/figs/pre_tune_mse.png)
+![pre_tune](Machine%20Learning/Voting_Regressor/figs/pre_tune_mse.png)
 
 ### Post Tuning Models
 
 The models were tuned using Grid Search Cross Validation and scored as before, an example from the code is shown below:
 
-![exp_pred](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/grid_search_ex.png)
+![exp_pred](Machine%20Learning/Voting_Regressor//figs/grid_search_ex.png)
 
- A DataFrame was again generated from these results.
+A DataFrame was again generated from these results.
 
 
-![post_tune](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/post_tune_mse.png)
+![post_tune](Machine%20Learning/Voting_Regressor//figs/post_tune_mse.png)
 
 ### Calculating Weights
 
@@ -198,39 +202,39 @@ $$w_k > 0$$
 
 The voting Regressor was constructed using the calculated weights and the 9 estimators. It was scored in the same manner and performed better than any of the individual models. 
 
-![vrg_cvscore](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/mod_eval.png)
+![vrg_cvscore](Machine%20Learning/Voting_Regressor//figs/mod_eval.png)
 
 The r squared values were then calculated.
 
 
-![r2](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/vrg_r2_with_city.png)
+![r2](Machine%20Learning/Voting_Regressor//figs/vrg_r2_with_city.png)
 
 Based on the r squared values, it appears overfitting of the training data may be occuring.
 
 ### Residual Plot
 
-![residuals](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/residual_plot.png)
+![residuals](Machine%20Learning/Voting_Regressor//figs/residual_plot.png)
 
 ### Estimates of Each Model
 
-![mod_est](First%20Segment%20Rubric%20-%20ML/Voting_Regressor//figs/pred_vs_avg_with_city.png)
+![mod_est](Machine%20Learning/Voting_Regressor//figs/pred_vs_avg_with_city.png)
 
 
 ## Presentation
 
-- Presentation: [Presentation](https://docs.google.com/presentation/d/1zto2DDfDRc9m0X1drAQJ9eYMI4gCOl_0CfD11_Fj8GU/edit#slide=id.g1cb5c65843b_0_5)
+- Google Slides: [Presentation](https://docs.google.com/presentation/d/1zto2DDfDRc9m0X1drAQJ9eYMI4gCOl_0CfD11_Fj8GU/edit#slide=id.g1cb5c65843b_0_5)
 
 - Tableau: [Dashboard](https://public.tableau.com/app/profile/icycake25489/viz/PredictingCurrentHousingPricesintheUS/PredictingCurrentHousingPricesintheUS)
 
 ## Findings
-* How accurately can we predict future housing prices with our machine learning model.
+1. How accurately can we predict future housing prices with our machine learning model.
 
 ![Screenshot 2023-01-24 at 9 04 48 PM](https://user-images.githubusercontent.com/110702997/214471208-e77b34a9-51e0-45d8-9e8a-cab894c0d283.png)
 The image shows after plugging in the inputs into the random rorest regression model (number of bedrooms, sqft, number of bathrooms, number of amenities) then you will get a prediction of the price of the monthly rent of the requirements you are looking for. The random forest model rendered an 86% score. Scoring is based off negative mean squared error because we are looking for a positive score. So the more positive the number the better. 
 
-* How do the prices compare with the different amenities, bedroom number, sqft, location, etc?
+2. How do the prices compare with the different amenities, bedroom number, sqft, location, etc?
 
-* How does population affect the housing prices?
+3. How does population affect the housing prices?
 
 ![Screenshot 2023-01-24 at 9 33 40 PM](https://user-images.githubusercontent.com/110702997/214474282-d863ce74-9544-4dd9-965b-0151d4e1760d.png)
 
