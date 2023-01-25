@@ -274,11 +274,11 @@ The correlations suggested that no single feature was strongly associated with a
 
 ![corr_wrt_price](Machine%20Learning/Voting_Regressor//figs/corr_with_price_text.png)
 
-As expected before analysis, the size (sqft) of the property plays the most significant role. The number of bedrooms and bathrooms also play an important role. None of these features is highly explanitory of the target variable.
+As expected, before analysis, the size (sqft) of the property plays the most significant role. The number of bedrooms and bathrooms also play an important role. None of these features is highly explanatory of the target variable.
 
 The number of amenities present at the property was the least correlated feature. Before analysis it was expected that this feature would play a more significant role.
 
-Two features added specifically to the Voting Regressor were the cityid and the pop_class or population group. While weakly correlated, the population grouping demonstrates explanitory power near that of bedrooms and bathrooms. The city identifier, or cityid, was second in predictive power to sqft. This indicates that nuances of each city's rental market or other city specific factors may play a larger role than anticipated.
+Two features added specifically to the Voting Regressor were the cityid and the pop_class or population group. While weakly correlated, the population grouping demonstrates explanatory power near that of bedrooms and bathrooms. The city identifier, or cityid, was second in predictive power to sqft. This indicates that nuances of each city's rental market or other city specific factors may play a larger role than anticipated.
 
 3. How does population affect the housing prices?
 
@@ -290,4 +290,5 @@ Though population seems to influence average price, without controlling for othe
 
 ![pop_stats](Machine%20Learning/Voting_Regressor//figs/avg_price_pop_ttest.png)
 	
-The P-Values have been rouded due to their extremley small size.
+The P-Values have been rounded due to their extremely small size.
+
