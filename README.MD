@@ -226,7 +226,7 @@ Based on the r squared values, it appears overfitting of the training data may b
 * How accurately can we predict future housing prices with our machine learning model.
 
 ![Screenshot 2023-01-24 at 9 04 48 PM](https://user-images.githubusercontent.com/110702997/214471208-e77b34a9-51e0-45d8-9e8a-cab894c0d283.png)
-The image shows after plugging in the inputs that you are looking for (number of bedrooms, sqft, number of bathrooms, number of amenities) then you will get a prediction of the price of the monthly rent of the requirements you are looking for.
+The image shows after plugging in the inputs into the random rorest regression model (number of bedrooms, sqft, number of bathrooms, number of amenities) then you will get a prediction of the price of the monthly rent of the requirements you are looking for. The random forest model rendered an 86% score. Scoring is based off negative mean squared error because we are looking for a positive score. So the more positive the number the better. 
 
 * How do the prices compare with the different amenities, bedroom number, sqft, location, etc?
 
