@@ -266,7 +266,8 @@ Overall, this model with reduced complexity performed better than the original i
 1. How accurately can we predict future housing prices with our machine learning model.
 
 ![Screenshot 2023-01-24 at 9 04 48 PM](https://user-images.githubusercontent.com/110702997/214471208-e77b34a9-51e0-45d8-9e8a-cab894c0d283.png)
-The image above shows that after plugging in the inputs into the random forest regression model (number of bedrooms, sqft, number of bathrooms, number of amenities) then you will get a prediction of the price of the monthly rent of the requirements you are looking for. The random forest model rendered an 86% score. Scoring is based off negative mean squared error because we are looking for a positive score. So, the more positive the number the better. 
+The image above shows that after plugging in the inputs into the random forest regression model (number of bedrooms, sqft, number of bathrooms, number of amenities) then you will get a prediction of the price of the monthly rent of the requirements you are looking for. The random forest model rendered an 86% score. Scoring is based off negative mean squared error because we are looking for a positive score. So, the more positive the number the better.
+So with that we can can say we can accurately predict the current house rental prices but not any future housing prices. There are so many other variables that we need to add and more data to be able to confidently predict future house rental prices.
 
 2. How do the prices compare with the different amenities, bedroom number, sqft, location, etc.?
 
